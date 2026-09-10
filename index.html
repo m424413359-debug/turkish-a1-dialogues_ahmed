@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İSTANBUL A1 - مزامنة الحوارات الصوتية</title>
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --accent: #f59e0b;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --highlight: #fef08a;
+    --highlight-border: #eab308;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: #1e293b;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 800px;
+    width: 100%;
+  }
+  .header-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border-right: 6px solid var(--accent);
+  }
+  .header-card h1 { margin: 0 0 6px; font-size: 22px; }
+  .header-card p { margin: 0; color: #cbd5e1; font-size: 13.5px; }
+
+  .dialogue-card {
+    background: var(--card);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+  .dialogue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: 16.5px;
+    font-weight: 700;
+    color: var(--primary);
+    border-right: 4px solid var(--accent);
+    padding-right: 8px;
+  }
+  .audio-player-wrapper {
+    margin-bottom: 16px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+  audio { width: 100%; height: 40px; outline: none; }
+
+  .line-box {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1.5px solid transparent;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .line-box:hover {
+    background-color: #f1f5f9;
+  }
+  .line-box.active {
+    background-color: #fef9c3 !important;
+    border-color: var(--highlight-border) !important;
+    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.2);
+    transform: scale(1.01);
+  }
+
+  .tr-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f172a;
+    direction: ltr;
+    text-align: right;
+    display: block;
+    line-height: 1.5;
+  }
+  .tr-text b {
+    color: #c2410c;
+    background: #ffedd5;
+    padding: 0 3px;
+    border-radius: 3px;
+  }
+  .ar-trans {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header-card">
+    <h1>İSTANBUL A1 - مزامنة الحوارات مع التسجيلات الصوتية</h1>
+    <p>اضغط تشغيل في أي حوار للمتابعة مع تظليل السطر المنطوق تلقائياً، أو انقر على أي جملة للاستماع إليها مباشرة.</p>
+  </div>
+
+  <!-- الحوار 1 -->
+  <div class="dialogue-card" id="dialogue-1">
+    <div class="dialogue-header">
+      <div class="section-title">1. حديقة الحيوان وسوق الخضار (Hayvanat Bahçesinde ve Manavda)</div>
+    </div>
+    <div class="audio-player-wrapper">
+      <audio controls>
+        <source src="Hayvanat bahçesine g.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="line-box" data-start="0.0" data-end="4.5" onclick="playSnippet(this)">
+      <span class="tr-text">Hayvanat bahçesine girmek için bir <b>jeton</b> alalım mı?</span>
+      <div class="ar-trans">هل نشتري فيشة للدخول إلى حديقة الحيوان؟</div>
+    </div>
+    <div class="line-box" data-start="4.6" data-end="9.8" onclick="playSnippet(this)">
+      <span class="tr-text">Evet. Bak! Şurada kocaman bir <b>zürafa</b> var. <b>Göz</b>leri çok büyük.</span>
+      <div class="ar-trans">نعم. انظر! هناك زرافة ضخمة. عيناها كبيرتان جداً.</div>
+    </div>
+    <div class="line-box" data-start="9.9" data-end="13.5" onclick="playSnippet(this)">
+      <span class="tr-text"><b>Ağac</b>ın yanında küçük bir <b>fare</b> koşuyor.</span>
+      <div class="ar-trans">بجانب الشجرة يركض فأر صغير.</div>
+    </div>
+    <div class="line-box" data-start="13.6" data-end="19.2" onclick="playSnippet(this)">
+      <span class="tr-text">Parkta rengârenk <b>lale</b>ler açmış. Adam da <b>merdiven</b> ile ağacı buduyor.</span>
+      <div class="ar-trans">في الحديقة تفتحت أزهار توليب ملونة. والرجل يشذب الشجرة بالسلم.</div>
+    </div>
+    <div class="line-box" data-start="19.3" data-end="27.5" onclick="playSnippet(this)">
+      <span class="tr-text">Çıkışta manava gidelim. Annem taze <b>ıspanak</b>, <b>havuç</b>, ekşi <b>limon</b>, tatlı <b>nar</b> ve biraz da <b>fındık</b> istedi.</span>
+      <div class="ar-trans">عند الخروج لنذهب إلى البقال. طلبت أمي سبانخ طازجة، جزراً، ليموناً حامضاً، رماناً حلواً، وقليلاً من البندق.</div>
+    </div>
+  </div>
+
+  <!-- الحوار 2 -->
+  <div class="dialogue-card" id="dialogue-2">
+    <div class="dialogue-header">
+      <div class="section-title">2. نزهة إلى الطبيعة والقرية (Doğada ve Çiftlikte)</div>
+    </div>
+    <div class="audio-player-wrapper">
+      <audio controls>
+        <source src="Bugün hava yağmurlu .mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="line-box" data-start="0.0" data-end="3.8" onclick="playSnippet(this)">
+      <span class="tr-text">Bugün hava yağmurlu. <b>Şemsiye</b> aldın mı?</span>
+      <div class="ar-trans">الجو ماطر اليوم. هل أخذت مظلة؟</div>
+    </div>
+    <div class="line-box" data-start="3.9" data-end="9.8" onclick="playSnippet(this)">
+      <span class="tr-text">Evet, aldım. Bak, <b>otobüs</b> geliyor. Ya da <b>araba</b> ile mi gidelim?</span>
+      <div class="ar-trans">نعم أخذت. انظر، الحافلة قادمة. أم نذهب بالسيارة؟</div>
+    </div>
+    <div class="line-box" data-start="9.9" data-end="17.2" onclick="playSnippet(this)">
+      <span class="tr-text"><b>Otobüs</b> iyi. Bilet için <b>para</b> hazır. Bak gökyüzüne, bir <b>uçak</b> geçiyor.</span>
+      <div class="ar-trans">الحافلة أفضل. النقود جاهزة للتذكرة. انظر إلى السماء، طائرة تعبر.</div>
+    </div>
+    <div class="line-box" data-start="17.3" data-end="23.5" onclick="playSnippet(this)">
+      <span class="tr-text">Çiftliğe geldik. Şurada büyük bir <b>ağaç</b> ve arkasında yüksek bir <b>dağ</b> var.</span>
+      <div class="ar-trans">وصلنا إلى المزرعة. هناك شجرة كبيرة وخلفها جبل مرتفع.</div>
+    </div>
+    <div class="line-box" data-start="23.6" data-end="32.5" onclick="playSnippet(this)">
+      <span class="tr-text">Çok güzel! <b>Ağac</b>ın altında bir <b>köpek</b> koşuyor. Orada da bir <b>tavuk</b>, bir <b>ördek</b> ve yeşil ot yiyen bir <b>inek</b> var.</span>
+      <div class="ar-trans">جميل جداً! تحت الشجرة يركض كلب. وهناك دجاجة، وبطة، وبقرة تأكل العشب الأخضر.</div>
+    </div>
+    <div class="line-box" data-start="32.6" data-end="39.5" onclick="playSnippet(this)">
+      <span class="tr-text">Gece olunca gökyüzünde <b>yıldız</b>ları izleriz. Sonra <b>deniz</b> kenarına yürürüz.</span>
+      <div class="ar-trans">عندما يحل الليل سنراقب النجوم في السماء. ثم نمشي إلى شاطئ البحر.</div>
+    </div>
+  </div>
+
+  <!-- الحوار 3 -->
+  <div class="dialogue-card" id="dialogue-3">
+    <div class="dialogue-header">
+      <div class="section-title">3. في المنزل وتناول الفطور (Evde ve Kahvaltıda)</div>
+    </div>
+    <div class="audio-player-wrapper">
+      <audio controls>
+        <source src="Günaydın baba Bebek .mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="line-box" data-start="0.0" data-end="3.5" onclick="playSnippet(this)">
+      <span class="tr-text">Günaydın <b>baba</b>. <b>Bebek</b> uyuyor mu?</span>
+      <div class="ar-trans">صباح الخير يا أبي. هل الرضيع نائم؟</div>
+    </div>
+    <div class="line-box" data-start="3.6" data-end="9.5" onclick="playSnippet(this)">
+      <span class="tr-text">Evet, <b>bebek</b> <b>ev</b>de uyuyor. Gel, <b>masa</b>da güzel <b>yemek</b> var.</span>
+      <div class="ar-trans">نعم، الرضيع نائم في البيت. تعال، على الطاولة يوجد طعام طيب.</div>
+    </div>
+    <div class="line-box" data-start="9.6" data-end="12.5" onclick="playSnippet(this)">
+      <span class="tr-text">Kahvaltıda ne var <b>baba</b>?</span>
+      <div class="ar-trans">ماذا يوجد على الإفطار يا أبي؟</div>
+    </div>
+    <div class="line-box" data-start="12.6" data-end="20.0" onclick="playSnippet(this)">
+      <span class="tr-text">Peynir, <b>zeytin</b>, <b>ceviz</b>, <b>incir</b>, <b>elma</b>, <b>üzüm</b> ve <b>portakal</b> var.</span>
+      <div class="ar-trans">يوجد جبن، زيتون، جوز، تين، تفاح، عنب، وبرتقال.</div>
+    </div>
+    <div class="line-box" data-start="20.1" data-end="27.5" onclick="playSnippet(this)">
+      <span class="tr-text">Harika! Bak, <b>halı</b>nın yanında <b>vazo</b> var. İçinde kırmızı bir <b>gül</b> duruyor.</span>
+      <div class="ar-trans">رائع! انظر، بجانب السجادة توجد مزهرية. في داخلها وردة حمراء.</div>
+    </div>
+    <div class="line-box" data-start="27.6" data-end="30.5" onclick="playSnippet(this)">
+      <span class="tr-text"><b>Radyo</b>yu açalım mı?</span>
+      <div class="ar-trans">هل نشغل الراديو؟</div>
+    </div>
+  </div>
+
+  <!-- الحوار 4 -->
+  <div class="dialogue-card" id="dialogue-4">
+    <div class="dialogue-header">
+      <div class="section-title">4. في الفصل الدراسي (Sınıfta)</div>
+    </div>
+    <div class="audio-player-wrapper">
+      <audio controls>
+        <source src="Günaydın arkadaşlar .mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="line-box" data-start="0.0" data-end="6.5" onclick="playSnippet(this)">
+      <span class="tr-text">Günaydın <b>arkadaşlar</b>. Lütfen sessiz olun, <b>ders</b> başlıyor. <b>Çanta</b> nerede?</span>
+      <div class="ar-trans">صباح الخير يا أصدقاء. من فضلكم اهدؤوا، الدرس يبدأ. أين الحقيبة؟</div>
+    </div>
+    <div class="line-box" data-start="6.6" data-end="15.0" onclick="playSnippet(this)">
+      <span class="tr-text">Günaydın <b>öğretmen</b>im. <b>Çanta</b> <b>masa</b>da. İçinde <b>kitap</b>, <b>defter</b>, <b>kalem</b>, <b>silgi</b> ve <b>cetvel</b> var.</span>
+      <div class="ar-trans">صباح الخير يا أستاذي. الحقيبة على الطاولة. يوجد بداخلها كتاب، دفتر، قلم، ممحاة ومسطرة.</div>
+    </div>
+    <div class="line-box" data-start="15.1" data-end="20.5" onclick="playSnippet(this)">
+      <span class="tr-text">Çok güzel. Şimdi <b>tahta</b>ya bakın ve bu <b>resm</b>i çizin.</span>
+      <div class="ar-trans">جميل جداً. انظروا الآن إلى السبورة وارسموا هذا الرسم.</div>
+    </div>
+    <div class="line-box" data-start="20.6" data-end="23.5" onclick="playSnippet(this)">
+      <span class="tr-text"><b>Saat</b> kaç öğretmenim?</span>
+      <div class="ar-trans">كم الساعة يا أستاذي؟</div>
+    </div>
+    <div class="line-box" data-start="23.6" data-end="28.0" onclick="playSnippet(this)">
+      <span class="tr-text"><b>Saat</b> 10. Bir <b>numara</b>, lütfen oku.</span>
+      <div class="ar-trans">الساعة 10. رقم واحد، اقرأ من فضلك.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // تهيئة مشغلات الصوت لكل بطاقة حوار
+  document.querySelectorAll('.dialogue-card').forEach(card => {
+    const player = card.querySelector('audio');
+    const lines = card.querySelectorAll('.line-box');
+
+    player.addEventListener('timeupdate', () => {
+      const cur = player.currentTime;
+      lines.forEach(box => {
+        const start = parseFloat(box.dataset.start);
+        const end = parseFloat(box.dataset.end);
+        if (cur >= start && cur < end) {
+          box.classList.add('active');
+        } else {
+          box.classList.remove('active');
+        }
+      });
+    });
+
+    // إيقاف المشغلات الأخرى تلقائياً عند تشغيل أي صوت
+    player.addEventListener('play', () => {
+      document.querySelectorAll('audio').forEach(otherPlayer => {
+        if (otherPlayer !== player) otherPlayer.pause();
+      });
+    });
+  });
+
+  // تشغيل الجملة مباشرة عند النقر عليها
+  function playSnippet(box) {
+    const card = box.closest('.dialogue-card');
+    const player = card.querySelector('audio');
+    const start = parseFloat(box.dataset.start);
+    player.currentTime = start;
+    player.play();
+  }
+</script>
+</body>
+</html>
