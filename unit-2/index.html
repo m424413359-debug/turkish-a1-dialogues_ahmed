@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEREDE? — الوحدة الثانية</title>
+<meta name="description" content="كل كلمات الوحدة الثانية الجديدة من كتاب İstanbul A1 مع النطق والحوارات والقواعد التفاعلية">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23163a7a'/><text x='50' y='70' font-size='58' text-anchor='middle' fill='%23f3c64a' font-family='Georgia' font-weight='700'>2</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1e7; --bg2:#efe7d8; --card:#fffdf8; --ink:#16213a; --ink2:#4a5470; --muted:#7b8299;
+  --line:#e3d9c6; --cobalt:#163a7a; --cobalt2:#2457b3; --turq:#0f8a83; --turq-soft:#d6efec;
+  --red:#c2392b; --red-soft:#f8dfdb; --gold:#e0a826; --gold-soft:#fbefcf; --ok:#1f8a4c; --ok-soft:#dcf1e4;
+  --shadow:0 1px 2px rgba(22,33,58,.06),0 8px 24px -12px rgba(22,33,58,.18);
+  --r:18px; --ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif; --tr:"Inter","Segoe UI",system-ui,sans-serif;
+  --disp:"Fraunces",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1424; --bg2:#141b30; --card:#18203a; --ink:#eef1f8; --ink2:#b9c1d9; --muted:#8a93ad; --line:#2a3454;
+  --cobalt:#8fb2ff; --cobalt2:#a9c4ff; --turq:#4fd1c5; --turq-soft:#123a3a; --red:#ff7b6b; --red-soft:#3d1f1f;
+  --gold:#f3c64a; --gold-soft:#3a3018; --ok:#5ad08a; --ok-soft:#173826; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -12px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  --bg:#0f1424; --bg2:#141b30; --card:#18203a; --ink:#eef1f8; --ink2:#b9c1d9; --muted:#8a93ad; --line:#2a3454;
+  --cobalt:#8fb2ff; --cobalt2:#a9c4ff; --turq:#4fd1c5; --turq-soft:#123a3a; --red:#ff7b6b; --red-soft:#3d1f1f;
+  --gold:#f3c64a; --gold-soft:#3a3018; --ok:#5ad08a; --ok-soft:#173826; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ar);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.tr{font-family:var(--tr);direction:ltr;unicode-bidi:isolate;text-align:right;overflow-wrap:anywhere}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+input{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:8px}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;white-space:nowrap}
+.brand .tile{width:34px;height:34px;border-radius:10px;background:var(--cobalt);display:grid;place-items:center;color:#f3c64a;font-family:var(--disp);font-weight:800;font-size:19px}
+:root[data-theme="dark"] .brand .tile{background:#22356b}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;justify-content:center}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:7px 12px;border-radius:999px;color:var(--ink2);text-decoration:none;font-size:14.5px;font-weight:500;white-space:nowrap}
+.nav a:hover,.nav a.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.tools{display:flex;gap:6px}
+.iconbtn{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);font-size:17px}
+.iconbtn[aria-pressed="true"]{background:var(--turq-soft);border-color:var(--turq)}
+@media (max-width:820px){.brand span{display:none}.nav{justify-content:flex-start}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:56px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.55;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23163a7a' stroke-opacity='.13' stroke-width='1.4'%3E%3Cpath d='M60 6 L74 46 L114 60 L74 74 L60 114 L46 74 L6 60 L46 46Z'/%3E%3Ccircle cx='60' cy='60' r='14'/%3E%3Ccircle cx='0' cy='0' r='22'/%3E%3Ccircle cx='120' cy='0' r='22'/%3E%3Ccircle cx='0' cy='120' r='22'/%3E%3Ccircle cx='120' cy='120' r='22'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent);mask-image:linear-gradient(180deg,#000 30%,transparent)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr 1fr;gap:32px;align-items:center}
+.kicker{display:inline-flex;gap:8px;align-items:center;font-size:13.5px;color:var(--turq);font-weight:600;background:var(--turq-soft);padding:5px 12px;border-radius:999px}
+.hero h1{margin:14px 0 6px;font-family:var(--disp);font-weight:800;font-size:clamp(56px,10vw,112px);line-height:.95;letter-spacing:-.02em;color:var(--cobalt);direction:ltr;text-align:right}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero .sub{font-size:clamp(20px,3vw,28px);font-weight:700;margin:0 0 10px}
+.hero p.lead{color:var(--ink2);max-width:560px;margin:0 0 22px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-family:var(--disp);font-size:26px;line-height:1.1;color:var(--cobalt)}
+.stat span{font-size:13px;color:var(--muted)}
+.progress-card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow);display:grid;gap:16px}
+.ring{--p:0;width:150px;height:150px;border-radius:50%;margin:0 auto;display:grid;place-items:center;
+  background:conic-gradient(var(--turq) calc(var(--p)*1%),var(--bg2) 0);transition:--p .6s}
+.ring>div{width:118px;height:118px;border-radius:50%;background:var(--card);display:grid;place-items:center;text-align:center}
+.ring b{font-family:var(--disp);font-size:34px;line-height:1;color:var(--turq)}
+.ring small{display:block;color:var(--muted);font-size:12.5px}
+.parts{display:grid;gap:8px}
+.part{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--bg);text-decoration:none;color:inherit}
+.part .l{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-family:var(--disp);color:#fff}
+.part:nth-child(1) .l{background:var(--cobalt)} .part:nth-child(2) .l{background:var(--turq)} .part:nth-child(3) .l{background:var(--red)}
+.part small{color:var(--muted);display:block;font-size:12.5px;line-height:1.4}
+@media (max-width:820px){.hero .wrap{grid-template-columns:minmax(0,1fr)}.hero{padding-top:32px}}
+
+/* voice banner */
+.banner{display:none;margin:0 0 18px;padding:12px 16px;border-radius:14px;background:var(--gold-soft);border:1px solid var(--gold);font-size:14.5px}
+.banner.show{display:block}
+.banner b{color:var(--ink)}
+
+/* ---------- sections ---------- */
+section.block{padding:40px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head h2{margin:0;font-size:clamp(24px,3.4vw,34px);line-height:1.2}
+.sec-head h2 .tr{font-family:var(--disp);color:var(--cobalt);font-weight:800;margin-inline-start:10px;font-size:.8em}
+.sec-head p{margin:4px 0 0;color:var(--ink2)}
+
+/* controls */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.search{flex:1;min-width:220px;position:relative}
+.search input{width:100%;padding:12px 44px 12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);font-size:15.5px}
+.search::before{content:"⌕";position:absolute;right:14px;top:50%;transform:translateY(-52%);font-size:22px;color:var(--muted)}
+.seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px}
+.seg button{padding:8px 14px;border-radius:10px;font-size:14px;font-weight:600;color:var(--ink2)}
+.seg button.on{background:var(--cobalt);color:#fff}
+:root[data-theme="dark"] .seg button.on{color:#0f1424}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button.on{color:#0f1424}}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px;scrollbar-width:thin}
+.chip{flex:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:500;white-space:nowrap}
+.chip .n{color:var(--muted);font-size:12px;margin-inline-start:4px}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip.on .n{color:inherit;opacity:.7}
+
+/* word grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.word{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 14px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px;transition:transform .15s,border-color .15s}
+.word:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--cobalt) 40%,var(--line))}
+.word.learned{border-color:var(--ok);background:linear-gradient(180deg,var(--ok-soft),var(--card) 55%)}
+.word .row{display:flex;align-items:center;gap:10px}
+.word .t{font-family:var(--tr);font-size:23px;font-weight:700;direction:ltr;letter-spacing:-.01em;flex:1;text-align:right}
+.word .p{font-size:15px;color:var(--turq);font-weight:600}
+.word .m{font-size:16px;font-weight:600}
+.word .opp{font-size:13px;color:var(--muted)}
+.word .opp .tr{color:var(--red);font-weight:600}
+.word .ex{margin-top:6px;padding-top:10px;border-top:1px dashed var(--line);font-size:14px;color:var(--ink2);display:flex;gap:8px;align-items:flex-start}
+.word .ex .tr{display:block;color:var(--ink);font-weight:500}
+.play{flex:none;width:40px;height:40px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;transition:transform .12s}
+.play:active{transform:scale(.92)}
+.play.sm{width:30px;height:30px;background:var(--turq-soft);color:var(--turq)}
+.play svg{width:16px;height:16px}
+.play.sm svg{width:12px;height:12px}
+.play.speaking{animation:pulse 1s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--turq) 60%,transparent)}100%{box-shadow:0 0 0 12px transparent}}
+:root[data-theme="dark"] .play:not(.sm){color:#0f1424}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .play:not(.sm){color:#0f1424}}
+.learn{position:absolute;top:12px;left:12px;width:28px;height:28px;border-radius:8px;border:1.5px solid var(--line);display:grid;place-items:center;font-size:14px;color:transparent}
+.word .row .learn{position:static}
+.learned .learn{background:var(--ok);border-color:var(--ok);color:#fff}
+.cat-tag{font-size:12px;color:var(--muted)}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+body.no-pr .p,body.no-pr .pr-line{display:none}
+
+/* flashcards */
+.flash{display:none;max-width:560px;margin:0 auto}
+.flash.show{display:block}
+.fcard{perspective:1200px;height:300px;cursor:pointer}
+.fcard .in{position:relative;width:100%;height:100%;transition:transform .55s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}
+.fcard.flip .in{transform:rotateY(180deg)}
+.fface{position:absolute;inset:0;backface-visibility:hidden;border-radius:26px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);display:grid;place-items:center;text-align:center;padding:24px}
+.fface.back{transform:rotateY(180deg);background:linear-gradient(160deg,var(--cobalt),#0f2a5c);color:#fff;border:0}
+.fface .big{font-family:var(--tr);font-size:46px;font-weight:700;direction:ltr}
+.fface .hint{color:var(--muted);font-size:13.5px}
+.fface.back .m{font-size:30px;font-weight:700}
+.fface.back .p{color:#f3c64a;font-size:18px}
+.fface.back .ex{opacity:.85;font-size:14.5px;margin-top:10px}
+.factions{display:flex;justify-content:center;gap:10px;margin-top:16px;flex-wrap:wrap}
+.btn{padding:11px 18px;border-radius:14px;font-weight:600;background:var(--card);border:1px solid var(--line)}
+.btn.primary{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+.btn.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.btn.warn{background:var(--red-soft);border-color:var(--red);color:var(--red)}
+:root[data-theme="dark"] .btn.primary,:root[data-theme="dark"] .btn.ok{color:#0f1424}
+.fcount{text-align:center;color:var(--muted);font-size:14px;margin-top:10px}
+
+/* ---------- numbers ---------- */
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px}
+@media (max-width:860px){.two{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+.panel h3{margin:0 0 4px;font-size:19px}
+.panel .desc{color:var(--muted);font-size:14px;margin:0 0 14px}
+.numin{display:flex;gap:10px}
+.numin input{flex:1;min-width:0;font-family:var(--tr);font-size:28px;font-weight:700;padding:10px 16px;border-radius:16px;border:2px solid var(--line);background:var(--bg);direction:ltr;text-align:left}
+.numin input:focus{border-color:var(--cobalt);outline:0}
+.numout{margin-top:14px;padding:16px;border-radius:16px;background:var(--bg);min-height:96px}
+.numout .tr{font-size:24px;font-weight:700;color:var(--cobalt);display:block;line-height:1.35}
+.numout .pr-line{color:var(--turq);font-weight:600;margin-top:4px}
+.numout .ord{margin-top:8px;font-size:14.5px;color:var(--ink2)}
+.numgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.nb{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:8px 6px;text-align:center;transition:.15s}
+.nb:hover{border-color:var(--cobalt);transform:translateY(-1px)}
+.nb b{display:block;font-family:var(--disp);font-size:20px;color:var(--cobalt)}
+.nb span{font-family:var(--tr);font-size:13.5px;font-weight:600;direction:ltr;display:block}
+.nb small{display:block;font-size:12px;color:var(--turq)}
+.mathgame{margin-top:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* ---------- grammar ---------- */
+.gtabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.gtab{padding:10px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-weight:600;font-size:14.5px}
+.gtab.on{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+:root[data-theme="dark"] .gtab.on{color:#0f1424}
+.gpane{display:none}
+.gpane.on{display:grid;gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media (max-width:860px){.gpane.on{grid-template-columns:minmax(0,1fr)}}
+.rule{font-size:15.5px}
+.rule p{margin:0 0 10px}
+.rule .formula{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.pill{font-family:var(--tr);direction:ltr;display:inline-block;padding:4px 12px;border-radius:10px;background:var(--gold-soft);border:1px solid var(--gold);font-weight:700}
+.pill.t{background:var(--red-soft);border-color:var(--red)}
+.pill.b{background:var(--turq-soft);border-color:var(--turq)}
+table.t4{width:100%;border-collapse:separate;border-spacing:0;font-size:14.5px;overflow:hidden;border-radius:14px;border:1px solid var(--line)}
+table.t4 th,table.t4 td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:start}
+table.t4 th{background:var(--bg2);font-size:13px;color:var(--ink2)}
+table.t4 td.tr{font-weight:600}
+table.t4 tr:last-child td{border-bottom:0}
+.tablewrap{overflow-x:auto}
+.builder input{width:100%;font-family:var(--tr);font-size:22px;font-weight:700;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:var(--bg);direction:ltr;text-align:left}
+.builder input:focus{border-color:var(--cobalt);outline:0}
+.steps{display:grid;gap:8px;margin-top:12px}
+.step{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;padding:10px 12px;border-radius:12px;background:var(--bg)}
+.step .k{flex:none;width:24px;height:24px;border-radius:50%;background:var(--cobalt);color:#fff;display:grid;place-items:center;font-size:12.5px;font-weight:700}
+:root[data-theme="dark"] .step .k{color:#0f1424}
+.result{margin-top:12px;padding:16px;border-radius:16px;background:linear-gradient(135deg,var(--cobalt),#0f2a5c);color:#fff;display:flex;align-items:center;gap:12px}
+.result .tr{font-size:30px;font-weight:800;flex:1}
+.result .tr .suf{color:#f3c64a}
+.result .play{background:#fff;color:var(--cobalt)}
+.quick{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.quick button{font-family:var(--tr);font-size:13.5px;padding:5px 10px;border-radius:9px;background:var(--bg);border:1px solid var(--line)}
+.note{font-size:13.5px;color:var(--ink2);background:var(--bg);border-inline-start:3px solid var(--gold);padding:8px 12px;border-radius:8px;margin-top:10px}
+.exlist{display:grid;gap:8px}
+.exl{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:var(--bg)}
+.exl .tx{flex:1}
+.exl .tr{display:block;font-weight:600}
+.exl .a{font-size:13.5px;color:var(--muted)}
+.suf{color:var(--red);font-weight:800}
+
+/* ---------- dialogues ---------- */
+.dlist{display:grid;grid-template-columns:260px minmax(0,1fr);gap:18px}
+@media (max-width:860px){.dlist{grid-template-columns:minmax(0,1fr)}}
+.dmenu{display:flex;flex-direction:column;gap:8px}
+@media (max-width:860px){.dmenu{flex-direction:row;overflow-x:auto;padding-bottom:6px}}
+.ditem{text-align:start;padding:12px 14px;border-radius:16px;background:var(--card);border:1px solid var(--line);display:flex;gap:10px;align-items:center;flex:none}
+.ditem .badge{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:#fff;font-weight:800;font-family:var(--disp)}
+.ditem[data-part="A"] .badge{background:var(--cobalt)} .ditem[data-part="B"] .badge{background:var(--turq)} .ditem[data-part="C"] .badge{background:var(--red)}
+.ditem b{display:block;font-family:var(--tr);font-size:15px;direction:ltr;text-align:right}
+.ditem small{color:var(--muted);font-size:12.5px;display:block;line-height:1.4}
+.ditem.on{border-color:var(--cobalt);box-shadow:0 0 0 3px color-mix(in srgb,var(--cobalt) 18%,transparent)}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+.stage-head{padding:16px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line);background:var(--bg2)}
+.stage-head h3{margin:0;font-size:18px;flex:1;min-width:180px}
+.stage-head h3 small{display:block;font-weight:500;color:var(--muted);font-size:13px}
+.toggles{display:flex;gap:6px;flex-wrap:wrap}
+.tg{padding:6px 11px;border-radius:10px;font-size:13px;font-weight:600;background:var(--card);border:1px solid var(--line)}
+.tg[aria-pressed="true"]{background:var(--turq-soft);border-color:var(--turq);color:var(--turq)}
+.chat{padding:18px;display:flex;flex-direction:column;gap:12px;max-height:620px;overflow-y:auto}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:88%}
+.msg.right{align-self:flex-end;flex-direction:row-reverse}
+.msg.left{align-self:flex-start}
+.msg.solo{max-width:100%}
+.av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-size:14px;font-family:var(--tr)}
+.bubble{padding:11px 14px;border-radius:18px;background:var(--bg);border:1px solid var(--line);cursor:pointer;transition:.15s}
+.msg.left .bubble{border-end-end-radius:6px;border-end-start-radius:18px}
+.msg.right .bubble{background:var(--turq-soft);border-color:color-mix(in srgb,var(--turq) 35%,var(--line))}
+.bubble:hover{border-color:var(--cobalt)}
+.bubble.active{border-color:var(--gold);box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 35%,transparent);transform:scale(1.01)}
+.bubble .who{font-size:12px;color:var(--muted);font-weight:600;font-family:var(--tr)}
+.bubble .tr{display:block;font-size:17px;font-weight:600;line-height:1.5}
+.bubble .pr-line{display:block;font-size:13.5px;color:var(--turq);margin-top:2px}
+.bubble .ar{display:block;font-size:14px;color:var(--ink2);margin-top:4px}
+.chat.hide-ar .ar,.chat.hide-pr .pr-line{display:none}
+.chat.hide-tr .bubble .tr{filter:blur(6px);transition:filter .2s}
+.chat.hide-tr .bubble:hover .tr,.chat.hide-tr .bubble.reveal .tr{filter:none}
+
+/* ---------- key sentences ---------- */
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:900px){.sgrid{grid-template-columns:1fr}}
+.scol h3{font-size:16px;margin:0 0 10px;display:flex;gap:8px;align-items:center}
+.scol h3 .badge{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:#fff;font-family:var(--disp);font-size:14px}
+.sent{display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;background:var(--card);border:1px solid var(--line);margin-bottom:8px}
+.sent .tx{flex:1}
+.sent .tr{display:block;font-weight:600;font-size:16px}
+.sent .a{font-size:14px;color:var(--ink2)}
+.sgrid.practice .sent .tr{filter:blur(7px)}
+.sgrid.practice .sent.reveal .tr{filter:none}
+
+/* culture */
+.cult{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+@media (max-width:860px){.cult{grid-template-columns:1fr}}
+.cc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow)}
+.cc h4{margin:0 0 6px;display:flex;justify-content:space-between;font-size:16px}
+.cc .tr{font-size:14.5px;display:block;margin-bottom:8px}
+.cc .a{font-size:14px;color:var(--ink2)}
+
+/* ---------- quiz ---------- */
+.quiz{max-width:720px;margin:0 auto}
+.qcard{background:var(--card);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:22px}
+.qtop{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted);margin-bottom:10px}
+.qbar{height:8px;border-radius:99px;background:var(--bg2);overflow:hidden;margin-bottom:18px}
+.qbar i{display:block;height:100%;background:linear-gradient(90deg,var(--turq),var(--cobalt));width:0;transition:width .3s}
+.qtype{font-size:13px;font-weight:700;color:var(--turq);letter-spacing:.02em}
+.qprompt{font-size:22px;font-weight:700;margin:6px 0 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.qprompt .tr{font-size:30px;color:var(--cobalt)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.opts{grid-template-columns:1fr}}
+.opt{padding:14px 16px;border-radius:16px;border:2px solid var(--line);background:var(--bg);text-align:start;font-size:16.5px;font-weight:600;transition:.15s}
+.opt.tr{text-align:right}
+.opt:hover:not(:disabled){border-color:var(--cobalt)}
+.opt.right{background:var(--ok-soft);border-color:var(--ok)}
+.opt.wrong{background:var(--red-soft);border-color:var(--red)}
+.qfoot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:10px;flex-wrap:wrap}
+.qfb{font-size:14.5px;font-weight:600}
+.score{text-align:center;padding:10px 0}
+.score b{font-family:var(--disp);font-size:72px;color:var(--cobalt);line-height:1}
+.review{margin-top:16px;display:grid;gap:8px;text-align:start}
+.review div{padding:10px 12px;border-radius:12px;background:var(--red-soft);font-size:14.5px}
+
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);text-align:center}
+footer .legend{max-width:760px;margin:0 auto 14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:start;color:var(--ink2)}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:14px;transition:.3s;z-index:99;max-width:calc(100% - 32px)}
+.toast.show{transform:translateX(-50%) translateY(0)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><div class="tile">2</div><span class="tr">Ünite 2 · NEREDE?</span></div>
+    <nav class="nav" id="nav">
+      <a href="#words">الكلمات</a>
+      <a href="#numbers">الأرقام</a>
+      <a href="#grammar">القواعد</a>
+      <a href="#dialogues">الحوارات</a>
+      <a href="#sentences">جمل مهمة</a>
+      <a href="#quiz">اختبر نفسك</a>
+    </nav>
+    <div class="tools">
+      <button class="iconbtn" id="slowBtn" aria-pressed="false" title="نطق بطيء">🐢</button>
+      <button class="iconbtn" id="prBtn" aria-pressed="true" title="إظهار/إخفاء النطق بالعربي">ع</button>
+      <button class="iconbtn" id="themeBtn" title="الوضع الليلي">🌙</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><span class="tr">İstanbul Yabancılar İçin Türkçe · A1</span> · الصفحات 21–36</span>
+      <h1>NEREDE<em>?</em></h1>
+      <div class="sub">الوحدة الثانية: أين؟</div>
+      <p class="lead">كل كلمة جديدة في الوحدة الثانية <b>لم ترد في الوحدة الأولى</b>، بنطقها بالحروف العربية وصوتها، مع الحوارات والقواعد والجمل المهمة — بطريقة تفاعلية تحفظ تقدّمك.</p>
+      <div class="stats">
+        <div class="stat"><b id="sWords">0</b><span>كلمة جديدة</span></div>
+        <div class="stat"><b id="sDlg">0</b><span>حوارات ونصوص</span></div>
+        <div class="stat"><b>5</b><span>قواعد تفاعلية</span></div>
+        <div class="stat"><b id="sSent">0</b><span>جملة مهمة</span></div>
+      </div>
+    </div>
+    <div class="progress-card">
+      <div class="ring" id="ring"><div><span><b id="pct">0%</b><small id="pctLbl">حفظت 0 كلمة</small></span></div></div>
+      <div class="parts">
+        <a class="part" href="#grammar" data-g="da"><span class="l">A</span><span><b class="tr">Okulda</b> · في المدرسة<small class="tr">-DA · var / yok</small></span></a>
+        <a class="part" href="#numbers"><span class="l">B</span><span><b class="tr">Sayılar</b> · الأرقام<small class="tr">kaç? · ne kadar? · kaçıncı?</small></span></a>
+        <a class="part" href="#grammar" data-g="isim"><span class="l">C</span><span><b class="tr">Şehirde</b> · في المدينة<small>İsim cümleleri · الصفات</small></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="banner" id="voiceBanner"></div>
+
+  <!-- WORDS -->
+  <section class="block" id="words">
+    <div class="sec-head">
+      <div><h2>الكلمات الجديدة <span class="tr">Kelimeler</span></h2><p>اضغط ▶ لتسمع الكلمة، و✓ لتعلّمها كمحفوظة. المثال تحت كل كلمة من الكتاب أو على نمطه.</p></div>
+      <div class="seg" role="tablist"><button class="on" data-view="grid">قائمة</button><button data-view="flash">بطاقات</button></div>
+    </div>
+    <div class="controls">
+      <label class="search"><input id="q" type="search" placeholder="ابحث بالتركي أو بالعربي… (مثال: masa ، مطبخ)" autocomplete="off"></label>
+      <div class="seg"><button class="on" data-show="all">الكل</button><button data-show="todo">لسا</button><button data-show="done">حفظتها</button></div>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+    <div class="flash" id="flash">
+      <div class="fcard" id="fcard"><div class="in">
+        <div class="fface front"><div><div class="big" id="fTr"></div><div class="hint">اضغط على البطاقة لتقلبها · مسافة = قلب</div></div></div>
+        <div class="fface back"><div><div class="m" id="fAr"></div><div class="p" id="fPr"></div><div class="ex" id="fEx"></div></div></div>
+      </div></div>
+      <div class="factions">
+        <button class="btn" id="fPlay">▶ اسمع</button>
+        <button class="btn warn" id="fNo">لسا ما حفظتها</button>
+        <button class="btn ok" id="fYes">حفظتها ✓</button>
+      </div>
+      <div class="fcount" id="fCount"></div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="block" id="numbers">
+    <div class="sec-head"><div><h2>الأرقام <span class="tr">Sayılar</span></h2><p>اكتب أي رقم وشوف كيف يُقرأ بالتركي، مع الترتيب (الأول، الثاني…).</p></div></div>
+    <div class="two">
+      <div class="panel">
+        <h3>محوّل الأرقام</h3>
+        <p class="desc">من 0 إلى 999,999,999 — جرّب رقم هاتفك أو عمرك.</p>
+        <div class="numin"><input id="numIn" inputmode="numeric" value="2026" aria-label="رقم"><button class="play" id="numPlay" aria-label="اسمع"></button></div>
+        <div class="numout" id="numOut"></div>
+        <div class="note">القاعدة: الأرقام تُقال من الكبير للصغير بدون «و»: <span class="tr">yüz yirmi üç</span> = مئة عشرون ثلاثة = 123. و«ألف» وحدها <span class="tr">bin</span> (مش bir bin).</div>
+      </div>
+      <div class="panel">
+        <h3>الأساس — اضغط لتسمع</h3>
+        <p class="desc">كل الأرقام تُبنى من هذه الكلمات فقط.</p>
+        <div class="numgrid" id="numGrid"></div>
+        <h3 style="margin-top:18px">الترتيب <span class="tr">Kaçıncı?</span></h3>
+        <p class="desc">الرقم + <span class="pill">-(ı)ncı</span> حسب التناغم الصوتي.</p>
+        <div class="numgrid" id="ordGrid"></div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:18px">
+      <h3>تحدّي الحساب <span class="tr">artı · eksi · çarpı · bölü</span></h3>
+      <p class="desc">اسمع العملية واكتب الجواب بالأرقام.</p>
+      <div class="mathgame"><button class="btn primary" id="mathNew">عملية جديدة ▶</button><span class="tr" id="mathQ" style="font-size:20px;font-weight:700"></span><input id="mathA" inputmode="numeric" style="width:110px;padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--bg);font-size:18px;direction:ltr" placeholder="؟"><button class="btn" id="mathCheck">تحقّق</button><span id="mathFb" class="qfb"></span></div>
+    </div>
+  </section>
+
+  <!-- GRAMMAR -->
+  <section class="block" id="grammar">
+    <div class="sec-head"><div><h2>القواعد <span class="tr">Dil Bilgisi</span></h2><p>كل قاعدة معها أداة تجرّب فيها بنفسك: اكتب أي كلمة وشوف النتيجة وخطوات الحل.</p></div></div>
+    <div class="gtabs" id="gtabs">
+      <button class="gtab on" data-p="da">1 · <span class="tr">-DA</span> في / على / عند</button>
+      <button class="gtab" data-p="var">2 · <span class="tr">var / yok</span></button>
+      <button class="gtab" data-p="isim">3 · الجملة الاسمية</button>
+      <button class="gtab" data-p="kac">4 · <span class="tr">kaç / ne kadar</span></button>
+      <button class="gtab" data-p="harmony">5 · التناغم الصوتي</button>
+    </div>
+
+    <div class="gpane on" id="g-da">
+      <div class="panel rule">
+        <h3>حالة المكان <span class="tr">Bulunma durumu (-DA)</span></h3>
+        <p>لاحقة تعني <b>في / على / عند / مع</b>. تُلصق بآخر الاسم وتجاوب على <span class="tr">Nerede?</span> (أين؟) و<span class="tr">Kimde?</span> (مع مَن؟).</p>
+        <div class="formula"><span class="pill">a ı o u → -da</span><span class="pill">e i ö ü → -de</span></div>
+        <p>وإذا انتهت الكلمة بحرف «قاسٍ» من حروف جملة <b class="tr">FıSTıKÇı ŞaHaP</b> (f s t k ç ş h p) تتحوّل d إلى t:</p>
+        <div class="formula"><span class="pill t">-ta</span><span class="pill t">-te</span></div>
+        <div class="exlist" id="daEx"></div>
+        <div class="note">أسماء الأعلام تأخذ فاصلة عليا: <span class="tr">Ahmet<span class="suf">'te</span>, İstanbul<span class="suf">'da</span>, Merve<span class="suf">'de</span></span></div>
+      </div>
+      <div class="panel builder">
+        <h3>جرّب: أين الشيء؟</h3>
+        <p class="desc">اكتب اسماً (مكان أو شخص) وشوف اللاحقة الصحيحة.</p>
+        <input id="daIn" value="mutfak" aria-label="كلمة">
+        <label style="display:flex;gap:8px;align-items:center;margin-top:8px;font-size:14px"><input type="checkbox" id="daProper" style="width:auto"> اسم علم (شخص / مدينة)</label>
+        <div class="steps" id="daSteps"></div>
+        <div class="result"><span class="tr" id="daRes"></span><button class="play" id="daPlay"></button></div>
+        <div class="quick" id="daQuick"></div>
+      </div>
+    </div>
+
+    <div class="gpane" id="g-var">
+      <div class="panel rule">
+        <h3><span class="tr">Var</span> = يوجد · <span class="tr">Yok</span> = لا يوجد</h3>
+        <p>ترتيب الجملة بالتركي عكس العربي غالباً: <b>المكان أولاً</b> (مع ‎-DA)، ثم الشيء، ثم <span class="tr">var/yok</span> في الآخر.</p>
+        <div class="formula"><span class="pill b">المكان + DA</span><span class="pill">الشيء</span><span class="pill t">var / yok</span></div>
+        <p>للسؤال نضيف <span class="tr">mı</span>: <span class="tr">var mı?</span> (هل يوجد؟) — <span class="tr">yok mu?</span> (ألا يوجد؟)</p>
+        <p>«عندي» بالتركي = <b>معي يوجد</b>: <span class="tr">Ben<span class="suf">de</span> 20 lira var.</span> = معي 20 ليرة.</p>
+        <div class="note">بعد الرقم يبقى الاسم مفرداً: <span class="tr">üç kitap</span> ✓ وليس <span class="tr">üç kitaplar</span> ✗</div>
+      </div>
+      <div class="panel">
+        <h3>أمثلة — اضغط لتسمع</h3>
+        <div class="exlist" id="varEx"></div>
+      </div>
+    </div>
+
+    <div class="gpane" id="g-isim">
+      <div class="panel rule">
+        <h3>الجملة الاسمية <span class="tr">İsim cümleleri</span></h3>
+        <p>بالتركي ما في فعل «يكون» منفصل. بدل ذلك نلصق <b>لاحقة شخصية</b> في آخر الاسم أو الصفة أو المكان:</p>
+        <div class="tablewrap"><table class="t4">
+          <tr><th>الضمير</th><th>اللاحقة</th><th>مثال</th><th>المعنى</th></tr>
+          <tr><td class="tr">Ben</td><td class="tr">-(y)Im</td><td class="tr">öğretmen<span class="suf">im</span></td><td>أنا معلّم</td></tr>
+          <tr><td class="tr">Sen</td><td class="tr">-sIn</td><td class="tr">yorgun<span class="suf">sun</span></td><td>أنت متعب</td></tr>
+          <tr><td class="tr">O</td><td class="tr">—</td><td class="tr">hasta</td><td>هو مريض</td></tr>
+          <tr><td class="tr">Biz</td><td class="tr">-(y)Iz</td><td class="tr">aç<span class="suf">ız</span></td><td>نحن جائعون</td></tr>
+          <tr><td class="tr">Siz</td><td class="tr">-sInIz</td><td class="tr">evde<span class="suf">siniz</span></td><td>أنتم في البيت</td></tr>
+          <tr><td class="tr">Onlar</td><td class="tr">-(lAr)</td><td class="tr">evli<span class="suf">ler</span></td><td>هم متزوجون</td></tr>
+        </table></div>
+        <p style="margin-top:12px">النفي بكلمة <span class="tr">değil</span> + اللاحقة: <span class="tr">işte değil<span class="suf">im</span></span>. والسؤال بـ <span class="tr">mI</span> + اللاحقة: <span class="tr">hasta mı<span class="suf">sın</span>?</span></p>
+        <div class="note"><b>(y)</b> حرف وصل يظهر فقط إذا انتهت الكلمة بحرف علّة: <span class="tr">hasta<span class="suf">y</span>ım</span>، <span class="tr">evde<span class="suf">y</span>iz</span>.</div>
+      </div>
+      <div class="panel builder">
+        <h3>مولّد التصريف</h3>
+        <p class="desc">اكتب صفة أو مهنة أو مكان + DA، وشوف الأشكال الأربعة لكل الضمائر.</p>
+        <input id="isimIn" value="öğrenci" aria-label="كلمة">
+        <div class="quick" id="isimQuick"></div>
+        <div class="seg" id="isimMode" style="margin-top:12px;flex-wrap:wrap"><button class="on" data-m="pos">مثبت</button><button data-m="neg">منفي</button><button data-m="q">سؤال</button><button data-m="nq">سؤال منفي</button></div>
+        <div class="exlist" id="isimOut" style="margin-top:12px"></div>
+      </div>
+    </div>
+
+    <div class="gpane" id="g-kac">
+      <div class="panel rule">
+        <h3>كم؟ بكم؟ أي ترتيب؟</h3>
+        <p><span class="tr">Kaç?</span> = كم (عدد) — بعدها الاسم <b>مفرد</b>: <span class="tr">Kaç öğrenci var?</span></p>
+        <p><span class="tr">Ne kadar?</span> = بكم / كم (سعر أو كمية): <span class="tr">Bu ne kadar?</span></p>
+        <p><span class="tr">Kaç lira?</span> = بكم ليرة؟ — <span class="tr">Kaç yaşındasın?</span> = كم عمرك؟</p>
+        <p><span class="tr">Saat kaç?</span> = كم الساعة؟ ← <span class="tr">Saat iki.</span> — <span class="tr">Saat kaçta?</span> = في أي ساعة؟ ← <span class="tr">Saat dokuzda.</span></p>
+        <p><span class="tr">Kaçıncı?</span> = أي رقم بالترتيب؟ ← <span class="tr">birinci, ikinci, üçüncü…</span></p>
+      </div>
+      <div class="panel"><h3>أمثلة الكتاب</h3><div class="exlist" id="kacEx"></div></div>
+    </div>
+
+    <div class="gpane" id="g-harmony">
+      <div class="panel rule">
+        <h3>مفتاح كل اللواحق: التناغم الصوتي <span class="tr">Ünlü uyumu</span></h3>
+        <p>اللاحقة «تتلوّن» حسب <b>آخر حرف علّة</b> في الكلمة. في الكتاب يكتبونها بحروف كبيرة:</p>
+        <p><span class="pill">A</span> = a أو e (نوعين) — مثل ‎-DA ‎-lAr</p>
+        <p><span class="pill b">I</span> = ı أو i أو u أو ü (أربعة أنواع) — مثل ‎-(y)Im ‎-sIn ‎mI</p>
+        <p><span class="pill t">D</span> = d أو t حسب الحرف الأخير (قاسٍ أم لا)</p>
+      </div>
+      <div class="panel">
+        <h3>جدول سريع</h3>
+        <div class="tablewrap"><table class="t4">
+          <tr><th>آخر حرف علّة</th><th>A</th><th>I</th><th>مثال</th></tr>
+          <tr><td class="tr">a, ı</td><td class="tr">a</td><td class="tr">ı</td><td class="tr">masa<b>da</b>, kız<b>ım</b></td></tr>
+          <tr><td class="tr">e, i</td><td class="tr">e</td><td class="tr">i</td><td class="tr">ev<b>de</b>, öğrenci<b>yim</b></td></tr>
+          <tr><td class="tr">o, u</td><td class="tr">a</td><td class="tr">u</td><td class="tr">okul<b>da</b>, yorgun<b>um</b></td></tr>
+          <tr><td class="tr">ö, ü</td><td class="tr">e</td><td class="tr">ü</td><td class="tr">süt<b>te</b>, üzgün<b>üm</b></td></tr>
+        </table></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIALOGUES -->
+  <section class="block" id="dialogues">
+    <div class="sec-head"><div><h2>الحوارات والنصوص <span class="tr">Diyaloglar</span></h2><p>كل نصوص القراءة والاستماع في الوحدة. اضغط على أي جملة لتسمعها، أو «شغّل الكل».</p></div></div>
+    <div class="dlist">
+      <div class="dmenu" id="dmenu"></div>
+      <div class="stage">
+        <div class="stage-head">
+          <h3 id="dTitle"></h3>
+          <div class="toggles">
+            <button class="tg" id="tgPlay" aria-pressed="false">▶ شغّل الكل</button>
+            <button class="tg" id="tgAr" aria-pressed="true">الترجمة</button>
+            <button class="tg" id="tgPr" aria-pressed="true">النطق</button>
+            <button class="tg" id="tgHide" aria-pressed="false">تحدّي: أخفِ التركي</button>
+          </div>
+        </div>
+        <div class="chat" id="chat"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTENCES -->
+  <section class="block" id="sentences">
+    <div class="sec-head">
+      <div><h2>الجمل المهمة <span class="tr">Önemli cümleler</span></h2><p>الجمل المفتاحية في أول كل درس — احفظها كما هي.</p></div>
+      <div class="seg"><button class="on" data-sm="read">قراءة</button><button data-sm="practice">تدريب (خمّن التركي)</button></div>
+    </div>
+    <div class="sgrid" id="sgrid"></div>
+    <h3 style="margin:34px 0 0">من ثقافة لثقافة: المحلات <span class="tr" style="color:var(--muted);font-weight:500">Kültürden Kültüre</span></h3>
+    <div class="cult" id="cult"></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="block" id="quiz">
+    <div class="sec-head"><div><h2>اختبر نفسك <span class="tr">Neler öğrendik?</span></h2><p>12 سؤال عشوائي كل مرة: معاني، استماع، ‎-DA، أرقام، وتصريف.</p></div></div>
+    <div class="quiz"><div class="qcard" id="qcard"></div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="legend">
+    <b>دليل قراءة النطق بالعربي:</b>
+    <span class="tr">e</span> = ي (وفي آخر الكلمة ه) · <span class="tr">ı</span> = كسرة مكتومة ـِ (صوت بين الكسرة والسكون) · <span class="tr">ö / ü</span> = و مع ضمّ الشفتين بقوة ·
+    <span class="tr">ç</span> = تش · <span class="tr">c</span> = ج · <span class="tr">ş</span> = ش · <span class="tr">g</span> = گ (مثل g في go) · <span class="tr">ğ</span> = لا تُلفظ، تُطيل الحرف قبلها ·
+    <span class="tr">p</span> = پ · <span class="tr">v</span> = ڤ · <span class="tr">j</span> = ژ. النبرة غالباً على آخر مقطع. الكتابة بالعربي تقريب — <b>اعتمد على زر الصوت</b>.
+  </div>
+  مبني على كتاب <span class="tr">İstanbul Yabancılar İçin Türkçe A1</span> (جامعة إسطنبول) · الوحدة 2 · للمذاكرة الشخصية
+</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+// İstanbul Yabancılar İçin Türkçe A1 — Ünite 2 «NEREDE?»
+// Single source of truth for the site, the PDF guide and the slides.
+// pr = Arabic-letter pronunciation guide. Scheme:
+//   e→ي (أول الكلمة إ، آخرها ه) · ı→ـِ (كسرة مكتومة) · ö/ü→و · ç→تش · c→ج · ş→ش
+//   g→گ · ğ→تُطيل الحرف قبلها · p→پ · v→ڤ · j→ژ
+
+window.UNIT2 = {
+  meta: {
+    book: "İstanbul Yabancılar İçin Türkçe — A1",
+    unit: 2,
+    title: "NEREDE?",
+    titleAr: "أين؟",
+    pages: "21–36",
+    parts: [
+      { id: "A", tr: "Okulda", ar: "في المدرسة", topics: ["Bulunma durumu (-DA)", "Var / Yok"] },
+      { id: "B", tr: "Sayılar", ar: "الأرقام", topics: ["Sayılar", "Kaç? / Ne kadar?", "Kaçıncı?"] },
+      { id: "C", tr: "Şehirde", ar: "في المدينة", topics: ["İsim cümleleri", "Sıfatlar"] }
+    ],
+    skills: ["أن تعرّف بنفسك وتقول أين أنت", "أن تقول الأرقام والأسعار وأرقام الهواتف", "أن تملأ استمارة فندق", "أن تصف الأشخاص بالصفات"]
+  },
+
+  categories: [
+    { id: "school", tr: "Okul ve Sınıf", ar: "المدرسة والصف", icon: "🏫" },
+    { id: "home", tr: "Ev ve Oda", ar: "البيت والغرفة", icon: "🛏️" },
+    { id: "city", tr: "Şehir ve Yerler", ar: "المدينة والأماكن", icon: "🏙️" },
+    { id: "jobs", tr: "Meslekler", ar: "المهن", icon: "👩‍💼" },
+    { id: "where", tr: "Nerede? Ne kadar?", ar: "كلمات السؤال والمكان", icon: "📍" },
+    { id: "time", tr: "Zaman", ar: "الوقت", icon: "🕒" },
+    { id: "math", tr: "Sayılar ve Ölçüler", ar: "الأعداد والقياس", icon: "🔢" },
+    { id: "adj", tr: "Sıfatlar", ar: "الصفات", icon: "✨" },
+    { id: "colors", tr: "Renkler", ar: "الألوان", icon: "🎨" },
+    { id: "food", tr: "Yiyecek ve İçecek", ar: "الأكل والشرب", icon: "🍅" },
+    { id: "other", tr: "Diğer", ar: "كلمات أخرى", icon: "➕" }
+  ],
+
+  // New words of Unit 2 that do not appear anywhere in Unit 1.
+  vocab: [
+    // ---------- school ----------
+    { tr: "ofis", pr: "أوفيس", ar: "مكتب (غرفة إدارة)", cat: "school", ex: "Öğretmen ofiste.", exAr: "المعلّم في المكتب." },
+    { tr: "kantin", pr: "كانتين", ar: "مقصف / كافتيريا", cat: "school", ex: "Bütün öğrenciler kantinde.", exAr: "كل الطلاب في المقصف." },
+    { tr: "perde", pr: "پيرده", ar: "ستارة", cat: "school", ex: "Sınıfta perdeler var.", exAr: "في الصف ستائر." },
+    { tr: "lamba", pr: "لامبا", ar: "مصباح / لمبة", cat: "school", ex: "Masada lamba var.", exAr: "على الطاولة مصباح." },
+    { tr: "projektör", pr: "پروژيكتور", ar: "جهاز عرض (بروجكتر)", cat: "school", ex: "Sınıfta projektör var mı?", exAr: "هل في الصف بروجكتر؟" },
+    { tr: "yazı tahtası", pr: "يازِ تاهتاسِ", ar: "سبّورة / لوح الكتابة", cat: "school", ex: "Yazı tahtası duvarda.", exAr: "السبورة على الجدار." },
+    { tr: "sekreter", pr: "سيكريتير", ar: "سكرتير / سكرتيرة", cat: "school", ex: "Sekreterler ofiste.", exAr: "السكرتيرات في المكتب." },
+    { tr: "kat", pr: "كات", ar: "طابق", cat: "school", ex: "Kantin üst katta.", exAr: "المقصف في الطابق العلوي." },
+    { tr: "katlı", pr: "كاتلِ", ar: "ذو طوابق", cat: "school", ex: "Okul 6 katlı.", exAr: "المدرسة من 6 طوابق." },
+    { tr: "teneffüs", pr: "تينيفّوس", ar: "الفُسحة / الاستراحة بين الحصص", cat: "school", ex: "Öğrenciler teneffüste.", exAr: "الطلاب في الفسحة." },
+    { tr: "kitaplık", pr: "كيتاپلِك", ar: "مكتبة (خزانة كتب)", cat: "school", ex: "Kitaplıkta neler var?", exAr: "ماذا يوجد في خزانة الكتب؟" },
+    { tr: "dosya", pr: "دوسيا", ar: "ملفّ", cat: "school", ex: "Dosya dolapta mı?", exAr: "هل الملف في الخزانة؟" },
+    { tr: "koridor", pr: "كوريدور", ar: "ممرّ", cat: "school", ex: "Çiçek koridorda.", exAr: "الزهرة في الممر." },
+    { tr: "sayfa", pr: "سايفا", ar: "صفحة", cat: "school", ex: "On birinci sayfada resimler var.", exAr: "في الصفحة الحادية عشرة صور." },
+    { tr: "gazete", pr: "گازيته", ar: "جريدة", cat: "school", ex: "Gazete Hasan'da.", exAr: "الجريدة مع حسن." },
+    { tr: "dergi", pr: "ديرگي", ar: "مجلة", cat: "school", ex: "Masada dergiler var.", exAr: "على الطاولة مجلات." },
+    { tr: "zamir", pr: "زامير", ar: "ضمير (في القواعد)", cat: "school", ex: "\"Ben\" bir zamir.", exAr: "«أنا» ضمير." },
+    { tr: "form", pr: "فورم", ar: "استمارة / نموذج", cat: "school", ex: "Otel formunu dolduralım.", exAr: "لنملأ استمارة الفندق." },
+
+    // ---------- home ----------
+    { tr: "yatak", pr: "ياتاك", ar: "سرير", cat: "home", ex: "Yatakta iki yastık var.", exAr: "على السرير وسادتان." },
+    { tr: "yastık", pr: "ياستِك", ar: "وسادة / مخدّة", cat: "home", ex: "Yatakta yastıklar var.", exAr: "على السرير وسائد." },
+    { tr: "ayna", pr: "آينا", ar: "مرآة", cat: "home", ex: "Duvarda aynalar var.", exAr: "على الجدار مرايا." },
+    { tr: "raf", pr: "راف", ar: "رفّ", cat: "home", ex: "Duvarda raflar var.", exAr: "على الجدار رفوف." },
+    { tr: "duvar", pr: "دوڤار", ar: "جدار / حائط", cat: "home", ex: "Duvarda ne var?", exAr: "ماذا يوجد على الجدار؟" },
+    { tr: "mutfak", pr: "موتفاك", ar: "مطبخ", cat: "home", ex: "Tabaklar mutfakta.", exAr: "الصحون في المطبخ." },
+    { tr: "tabak", pr: "تاباك", ar: "صحن", cat: "home", ex: "Tabaklar mutfakta mı?", exAr: "هل الصحون في المطبخ؟" },
+    { tr: "sehpa", pr: "سيهپا", ar: "طاولة صغيرة (طاولة قهوة)", cat: "home", ex: "Sehpada çay var.", exAr: "على الطاولة الصغيرة شاي." },
+    { tr: "ocak", pr: "أوجاك", ar: "موقد / غاز الطبخ (وأيضاً: كانون الثاني)", cat: "home", ex: "Mutfakta ocak var.", exAr: "في المطبخ موقد." },
+    { tr: "anahtar", pr: "أناهتار", ar: "مفتاح", cat: "home", ex: "Buyurun, anahtarlarınız.", exAr: "تفضّل، مفاتيحك." },
+    { tr: "çöp kutusu", pr: "تشوپ كوتوسو", ar: "سلّة مهملات", cat: "home", ex: "Sokakta iki çöp kutusu var.", exAr: "في الشارع سلتا مهملات." },
+
+    // ---------- city ----------
+    { tr: "şehir", pr: "شيهير", ar: "مدينة", cat: "city", ex: "İstanbul büyük bir şehir.", exAr: "إسطنبول مدينة كبيرة." },
+    { tr: "bina", pr: "بينا", ar: "مبنى / عمارة", cat: "city", ex: "Büyük binalar var.", exAr: "توجد مبانٍ كبيرة." },
+    { tr: "cadde", pr: "جادّه", ar: "شارع رئيسي / جادّة", cat: "city", ex: "Kafe Taksim 7. Cadde'de.", exAr: "المقهى في الشارع السابع في تقسيم." },
+    { tr: "durak", pr: "دوراك", ar: "موقف (باص)", cat: "city", ex: "Durakta insanlar var.", exAr: "في الموقف ناس." },
+    { tr: "tramvay", pr: "ترامڤاي", ar: "ترام", cat: "city", ex: "Sokakta tramvay var.", exAr: "في الشارع ترام." },
+    { tr: "istasyon", pr: "إيستاسيون", ar: "محطّة", cat: "city", ex: "Mağazalar istasyonlarda.", exAr: "المحلات في المحطات." },
+    { tr: "bank", pr: "بانك", ar: "مقعد (في الحديقة)", cat: "city", ex: "İnsanlar bankta.", exAr: "الناس على المقعد." },
+    { tr: "market", pr: "ماركيت", ar: "سوبرماركت / بقالة", cat: "city", ex: "Mahallede market var mı?", exAr: "هل في الحي سوبرماركت؟" },
+    { tr: "fırın", pr: "فِرِن", ar: "مخبز / فرن", cat: "city", ex: "Fırında ekmek var.", exAr: "في المخبز خبز." },
+    { tr: "kasap", pr: "كاساپ", ar: "ملحمة / لحّام", cat: "city", ex: "Kasap sokakta.", exAr: "الملحمة في الشارع." },
+    { tr: "manav", pr: "ماناڤ", ar: "محل خضار وفواكه", cat: "city", ex: "Manavda domates var.", exAr: "عند بائع الخضار بندورة." },
+    { tr: "kuaför", pr: "كوافور", ar: "صالون حلاقة / كوافير", cat: "city", ex: "Kuaför nerede?", exAr: "أين الصالون؟" },
+    { tr: "pastane", pr: "پاستانه", ar: "محل حلويات وكعك", cat: "city", ex: "Pastanede pasta var.", exAr: "في محل الحلويات كعك." },
+    { tr: "kuyumcu", pr: "كويومجو", ar: "صائغ / محل ذهب", cat: "city", ex: "Kuyumcu çarşıda.", exAr: "الصائغ في السوق." },
+    { tr: "postane", pr: "پوستانه", ar: "مكتب البريد", cat: "city", ex: "Postacı postanede.", exAr: "ساعي البريد في مكتب البريد." },
+    { tr: "alışveriş merkezi", pr: "ألِشڤيريش ميركيزي", ar: "مول / مركز تسوّق", cat: "city", ex: "Büyük şehirlerde alışveriş merkezi var.", exAr: "في المدن الكبيرة مولات." },
+    { tr: "mahalle", pr: "ماهالّه", ar: "حيّ / حارة", cat: "city", ex: "Gül Mahallesi, 7. Sokak.", exAr: "حي گول، الشارع السابع." },
+    { tr: "semt", pr: "سيمت", ar: "منطقة / حيّ في المدينة", cat: "city", ex: "Sizin semtinizde banka var mı?", exAr: "هل في منطقتكم بنك؟" },
+    { tr: "üniversite", pr: "أونيڤيرسيته", ar: "جامعة", cat: "city", ex: "Onlar İstanbul Üniversitesinde öğrenci.", exAr: "هم طلاب في جامعة إسطنبول." },
+    { tr: "acil servis", pr: "أجيل سيرڤيس", ar: "قسم الطوارئ", cat: "city", ex: "Acil servisin numarası 112.", exAr: "رقم الطوارئ 112." },
+    { tr: "trafik", pr: "ترافيك", ar: "حركة السير / الزحمة", cat: "city", ex: "İstanbul'da trafik var mı?", exAr: "هل في إسطنبول زحمة سير؟" },
+    { tr: "adres", pr: "آدريس", ar: "عنوان", cat: "city", ex: "Adresiniz nedir?", exAr: "ما عنوانك؟" },
+    { tr: "yer", pr: "يير", ar: "مكان / الأرض", cat: "city", ex: "Yerde sarı halı var.", exAr: "على الأرض سجادة صفراء." },
+    { tr: "adam", pr: "آدام", ar: "رجل", cat: "city", ex: "Yaşlı bir adam var.", exAr: "يوجد رجل عجوز." },
+
+    // ---------- jobs ----------
+    { tr: "eczacı", pr: "إيجزاجِ", ar: "صيدلاني", cat: "jobs", ex: "Eczacı eczanede.", exAr: "الصيدلاني في الصيدلية." },
+    { tr: "kasiyer", pr: "كاسيير", ar: "كاشير / أمين صندوق", cat: "jobs", ex: "Kasiyer markette.", exAr: "الكاشير في السوبرماركت." },
+    { tr: "tezgâhtar", pr: "تيزگياهتار", ar: "بائع في محل", cat: "jobs", ex: "Tezgâhtar mağazada.", exAr: "البائع في المحل." },
+    { tr: "resepsiyonist", pr: "ريسيپسيونيست", ar: "موظّف استقبال", cat: "jobs", ex: "Resepsiyonist otelde.", exAr: "موظف الاستقبال في الفندق." },
+    { tr: "psikolog", pr: "پسيكولوگ", ar: "طبيب نفسي / أخصائي نفسي", cat: "jobs", ex: "Sen psikolog musun?", exAr: "هل أنت أخصائي نفسي؟" },
+    { tr: "mimar", pr: "ميمار", ar: "مهندس معماري", cat: "jobs", ex: "Ben mühendisim, o mimar.", exAr: "أنا مهندس، وهي مهندسة معمارية." },
+
+    // ---------- where / question words ----------
+    { tr: "kimde", pr: "كيمده", ar: "مع مَن؟ / عند مَن؟", cat: "where", ex: "Kalem kimde?", exAr: "القلم مع مَن؟" },
+    { tr: "burada", pr: "بورادا", ar: "هنا", cat: "where", ex: "Mine de burada.", exAr: "مينه أيضاً هنا." },
+    { tr: "orada", pr: "أورادا", ar: "هناك", cat: "where", ex: "Tamam, orada görüşürüz.", exAr: "حسناً، نلتقي هناك." },
+    { tr: "alt", pr: "آلت", ar: "أسفل / سُفلي", cat: "where", ex: "Alt katta ofisler var.", exAr: "في الطابق السفلي مكاتب." },
+    { tr: "üst", pr: "أوست", ar: "أعلى / عُلوي", cat: "where", ex: "Kantin üst katta.", exAr: "المقصف في الطابق العلوي." },
+    { tr: "uzak", pr: "أوزاك", ar: "بعيد", cat: "where", ex: "Evimiz okula uzak değil.", exAr: "بيتنا ليس بعيداً عن المدرسة." },
+    { tr: "yakın", pr: "ياكِن", ar: "قريب", cat: "where", ex: "Okul eve yakın.", exAr: "المدرسة قريبة من البيت." },
+    { tr: "kaç", pr: "كاتش", ar: "كم؟ (للعدد)", cat: "where", ex: "Okulda kaç sınıf var?", exAr: "كم صفاً في المدرسة؟" },
+    { tr: "ne kadar", pr: "ني كادار", ar: "بكم؟ / كم؟ (للسعر والكمية)", cat: "where", ex: "1 litre süt ne kadar?", exAr: "بكم لتر الحليب؟" },
+    { tr: "kaçıncı", pr: "كاتشِنجِ", ar: "الكم؟ (أي ترتيب؟)", cat: "where", ex: "Sınıf kaçıncı katta?", exAr: "في أي طابق الصف؟" },
+    { tr: "neden", pr: "نيدين", ar: "لماذا؟", cat: "where", ex: "Neden, hasta mısın?", exAr: "لماذا؟ هل أنت مريض؟" },
+    { tr: "niçin", pr: "نيتشين", ar: "لماذا؟ (مرادف neden)", cat: "where", ex: "Ali niçin Taksim'de?", exAr: "لماذا علي في تقسيم؟" },
+    { tr: "çünkü", pr: "تشونكو", ar: "لأنّ", cat: "where", ex: "Sınıfta öğrenci yok, çünkü öğrenciler teneffüste.", exAr: "لا يوجد طلاب في الصف، لأنهم في الفسحة." },
+
+    // ---------- time ----------
+    { tr: "şimdi", pr: "شيمدي", ar: "الآن", cat: "time", ex: "Şimdi neredesin?", exAr: "أين أنت الآن؟" },
+    { tr: "bugün", pr: "بوگون", ar: "اليوم", cat: "time", ex: "Bugünün tarihi nedir?", exAr: "ما تاريخ اليوم؟" },
+    { tr: "gün", pr: "گون", ar: "يوم", cat: "time", ex: "Bir ayda otuz gün var.", exAr: "في الشهر ثلاثون يوماً." },
+    { tr: "hafta", pr: "هافتا", ar: "أسبوع", cat: "time", ex: "Bir haftada kaç gün var?", exAr: "كم يوماً في الأسبوع؟" },
+    { tr: "hafta sonu", pr: "هافتا سونو", ar: "عطلة نهاية الأسبوع", cat: "time", ex: "Hafta sonu mağazalar çok kalabalık.", exAr: "في نهاية الأسبوع المحلات مزدحمة جداً." },
+    { tr: "ay", pr: "آي", ar: "شهر (وأيضاً: قمر)", cat: "time", ex: "Bir yılda on iki ay var.", exAr: "في السنة اثنا عشر شهراً." },
+    { tr: "sabah", pr: "ساباه", ar: "صباح", cat: "time", ex: "Mağazalar sabah açık.", exAr: "المحلات مفتوحة في الصباح." },
+    { tr: "öğleden sonra", pr: "أوليدين سونرا", ar: "بعد الظهر", cat: "time", ex: "Öğleden sonra okuldayım.", exAr: "بعد الظهر أنا في المدرسة." },
+    { tr: "gündüz", pr: "گوندوز", ar: "النهار", cat: "time", ex: "Gündüz çok sıcak.", exAr: "النهار حارّ جداً." },
+    { tr: "tarih", pr: "تاريه", ar: "تاريخ", cat: "time", ex: "Bugünün tarihi nedir?", exAr: "ما تاريخ اليوم؟" },
+    { tr: "doğum tarihi", pr: "دوووم تاريهي", ar: "تاريخ الميلاد", cat: "time", ex: "Doğum tarihiniz ne?", exAr: "ما تاريخ ميلادك؟" },
+    { tr: "cuma", pr: "جوما", ar: "الجمعة", cat: "time", ex: "Mısır'da mağazalar cuma günü tatil.", exAr: "في مصر المحلات عطلة يوم الجمعة." },
+    { tr: "pazar", pr: "پازار", ar: "الأحد", cat: "time", ex: "Bu gün her zaman pazar değil.", exAr: "هذا اليوم ليس دائماً الأحد." },
+    { tr: "tatil", pr: "تاتيل", ar: "عطلة", cat: "time", ex: "Mağazalar cuma günü tatildir.", exAr: "المحلات في عطلة يوم الجمعة." },
+    { tr: "genellikle", pr: "گينيلليكله", ar: "عادةً / غالباً", cat: "time", ex: "İnsanlar genellikle akşam alışverişte.", exAr: "الناس عادةً يتسوّقون في المساء." },
+    { tr: "her zaman", pr: "هير زامان", ar: "دائماً", cat: "time", ex: "Biz her zaman beraberiz.", exAr: "نحن دائماً معاً." },
+
+    // ---------- math / measures ----------
+    { tr: "lira", pr: "ليرا", ar: "ليرة", cat: "math", ex: "Bu kitap kaç lira?", exAr: "بكم ليرة هذا الكتاب؟" },
+    { tr: "kilo", pr: "كيلو", ar: "كيلو", cat: "math", ex: "1 kilo domates kaç lira?", exAr: "كيلو البندورة بكم ليرة؟" },
+    { tr: "litre", pr: "ليتره", ar: "لتر", cat: "math", ex: "1 litre süt ne kadar?", exAr: "بكم لتر الحليب؟" },
+    { tr: "yaş", pr: "ياش", ar: "عُمر / سنة من العمر", cat: "math", ex: "Kaç yaşındasın?", exAr: "كم عمرك؟" },
+    { tr: "artı", pr: "آرتِ", ar: "زائد (+)", cat: "math", ex: "Bir artı beş altı.", exAr: "واحد زائد خمسة يساوي ستة." },
+    { tr: "eksi", pr: "إيكسي", ar: "ناقص (−)", cat: "math", ex: "Sekiz eksi altı iki.", exAr: "ثمانية ناقص ستة يساوي اثنين." },
+    { tr: "çarpı", pr: "تشارپِ", ar: "ضرب (×)", cat: "math", ex: "Dört çarpı sekiz otuz iki.", exAr: "أربعة ضرب ثمانية يساوي اثنين وثلاثين." },
+    { tr: "bölü", pr: "بولو", ar: "تقسيم (÷)", cat: "math", ex: "Elli bölü beş on.", exAr: "خمسون تقسيم خمسة يساوي عشرة." },
+    { tr: "milyon", pr: "ميليون", ar: "مليون", cat: "math", ex: "İstanbul'da kaç milyon insan var?", exAr: "كم مليون شخص في إسطنبول؟" },
+    { tr: "birinci", pr: "بيرينجي", ar: "الأول", cat: "math", ex: "Benim evim birinci katta.", exAr: "بيتي في الطابق الأول." },
+    { tr: "sonuncu", pr: "سونونجو", ar: "الأخير", cat: "math", ex: "Sonuncu sırada kim var?", exAr: "مَن في الصف (المقعد) الأخير؟" },
+
+    // ---------- adjectives ----------
+    { tr: "boş", pr: "بوش", ar: "فارغ / غير مشغول", cat: "adj", opp: "dolu", ex: "Dersten sonra boş musun?", exAr: "هل أنت فاضي بعد الدرس؟" },
+    { tr: "dolu", pr: "دولو", ar: "ممتلئ / مليان", cat: "adj", opp: "boş", ex: "Kantin dolu.", exAr: "المقصف ممتلئ." },
+    { tr: "açık", pr: "آتشِك", ar: "مفتوح", cat: "adj", opp: "kapalı", ex: "Mağazalar saat 09.00'da açık.", exAr: "المحلات مفتوحة الساعة 9." },
+    { tr: "kapalı", pr: "كاپالِ", ar: "مغلق", cat: "adj", opp: "açık", ex: "Kapalı gün yoktur.", exAr: "لا يوجد يوم إغلاق." },
+    { tr: "yaşlı", pr: "ياشلِ", ar: "كبير في السن / عجوز", cat: "adj", opp: "genç", ex: "Yaşlı bir adam var.", exAr: "يوجد رجل عجوز." },
+    { tr: "genç", pr: "گينتش", ar: "شاب / صغير في السن", cat: "adj", opp: "yaşlı", ex: "Biz genç değiliz.", exAr: "نحن لسنا شباباً." },
+    { tr: "çalışkan", pr: "تشالِشكان", ar: "مجتهد", cat: "adj", opp: "tembel", ex: "Ben ve Aylin çok çalışkanız.", exAr: "أنا وأيلين مجتهدتان جداً." },
+    { tr: "tembel", pr: "تيمبيل", ar: "كسول", cat: "adj", opp: "çalışkan", ex: "Sen tembel değilsin.", exAr: "أنت لست كسولاً." },
+    { tr: "düzenli", pr: "دوزينلي", ar: "مرتّب / منظّم", cat: "adj", opp: "dağınık", ex: "Biz düzenliyiz.", exAr: "نحن منظّمون." },
+    { tr: "dağınık", pr: "دائِنِك", ar: "فوضوي / مبعثر", cat: "adj", opp: "düzenli", ex: "Oda dağınık.", exAr: "الغرفة فوضى." },
+    { tr: "dikkatli", pr: "ديكّاتلي", ar: "منتبه / حذِر", cat: "adj", opp: "dikkatsiz", ex: "Aylin çok dikkatli.", exAr: "أيلين منتبهة جداً." },
+    { tr: "dikkatsiz", pr: "ديكّاتسيز", ar: "غير منتبه / مهمل", cat: "adj", opp: "dikkatli", ex: "O dikkatsiz değil.", exAr: "هو ليس مهملاً." },
+    { tr: "hızlı", pr: "هِزلِ", ar: "سريع", cat: "adj", opp: "yavaş", ex: "Ben hızlıyım.", exAr: "أنا سريعة." },
+    { tr: "yavaş", pr: "ياڤاش", ar: "بطيء", cat: "adj", opp: "hızlı", ex: "Aylin işte yavaş.", exAr: "أيلين بطيئة في العمل." },
+    { tr: "sessiz", pr: "سيسّيز", ar: "هادئ / قليل الكلام", cat: "adj", opp: "konuşkan", ex: "Ben daha sessizim.", exAr: "أنا أهدأ (أقل كلاماً)." },
+    { tr: "konuşkan", pr: "كونوشكان", ar: "كثير الكلام / ثرثار", cat: "adj", opp: "sessiz", ex: "O çok konuşkan.", exAr: "هو كثير الكلام." },
+    { tr: "sakin", pr: "ساكين", ar: "هادئ الطبع", cat: "adj", opp: "sinirli", ex: "Ben sakinim.", exAr: "أنا هادئ." },
+    { tr: "sinirli", pr: "سينيرلي", ar: "عصبي", cat: "adj", opp: "sakin", ex: "Sen sinirli misin?", exAr: "هل أنت عصبي؟" },
+    { tr: "geniş", pr: "گينيش", ar: "واسع", cat: "adj", opp: "dar", ex: "Oda geniş.", exAr: "الغرفة واسعة." },
+    { tr: "dar", pr: "دار", ar: "ضيّق", cat: "adj", opp: "geniş", ex: "Sokak dar.", exAr: "الشارع ضيّق." },
+    { tr: "kötü", pr: "كوتو", ar: "سيّئ", cat: "adj", opp: "iyi", ex: "Hava kötü değil.", exAr: "الطقس ليس سيئاً." },
+    { tr: "zengin", pr: "زينگين", ar: "غنيّ", cat: "adj", opp: "fakir", ex: "Onlar zengin mi?", exAr: "هل هم أغنياء؟" },
+    { tr: "fakir", pr: "فاكير", ar: "فقير", cat: "adj", opp: "zengin", ex: "O fakir değil.", exAr: "هو ليس فقيراً." },
+    { tr: "çirkin", pr: "تشيركين", ar: "قبيح", cat: "adj", opp: "güzel", ex: "Bu resim çirkin değil.", exAr: "هذه الصورة ليست قبيحة." },
+    { tr: "ucuz", pr: "أوجوز", ar: "رخيص", cat: "adj", opp: "pahalı", ex: "Bu kitap ucuz.", exAr: "هذا الكتاب رخيص." },
+    { tr: "pahalı", pr: "پاهالِ", ar: "غالٍ", cat: "adj", opp: "ucuz", ex: "İstanbul pahalı mı?", exAr: "هل إسطنبول غالية؟" },
+    { tr: "önemli", pr: "أونيملي", ar: "مهمّ", cat: "adj", opp: "önemsiz", ex: "Bu ders çok önemli.", exAr: "هذا الدرس مهم جداً." },
+    { tr: "önemsiz", pr: "أونيمسيز", ar: "غير مهمّ", cat: "adj", opp: "önemli", ex: "Bu önemsiz.", exAr: "هذا غير مهم." },
+    { tr: "güçlü", pr: "گوتشلو", ar: "قويّ", cat: "adj", opp: "güçsüz", ex: "O çok güçlü.", exAr: "هو قوي جداً." },
+    { tr: "güçsüz", pr: "گوتشسوز", ar: "ضعيف", cat: "adj", opp: "güçlü", ex: "Ben güçsüz değilim.", exAr: "أنا لست ضعيفاً." },
+    { tr: "kibar", pr: "كيبار", ar: "مهذّب / لطيف", cat: "adj", opp: "kaba", ex: "Öğretmenimiz çok kibar.", exAr: "معلّمنا مهذب جداً." },
+    { tr: "kaba", pr: "كابا", ar: "فظّ / قليل الذوق", cat: "adj", opp: "kibar", ex: "O kaba değil.", exAr: "هو ليس فظّاً." },
+    { tr: "cesur", pr: "جيسور", ar: "شجاع", cat: "adj", opp: "korkak", ex: "Sen çok cesursun.", exAr: "أنت شجاع جداً." },
+    { tr: "korkak", pr: "كوركاك", ar: "جبان", cat: "adj", opp: "cesur", ex: "Ben korkak değilim.", exAr: "أنا لست جباناً." },
+    { tr: "kolay", pr: "كولاي", ar: "سهل", cat: "adj", opp: "zor", ex: "Türkçe kolay mı?", exAr: "هل التركية سهلة؟" },
+    { tr: "zor", pr: "زور", ar: "صعب", cat: "adj", opp: "kolay", ex: "Bu soru zor.", exAr: "هذا السؤال صعب." },
+    { tr: "mutsuz", pr: "موتسوز", ar: "حزين / غير سعيد", cat: "adj", opp: "mutlu", ex: "Neden mutsuzsun?", exAr: "لماذا أنت حزين؟" },
+    { tr: "uzun", pr: "أوزون", ar: "طويل", cat: "adj", opp: "kısa", ex: "Sokak çok uzun.", exAr: "الشارع طويل جداً." },
+    { tr: "kısa", pr: "كِسا", ar: "قصير", cat: "adj", opp: "uzun", ex: "Ders kısa.", exAr: "الدرس قصير." },
+    { tr: "zayıf", pr: "زايِف", ar: "نحيف", cat: "adj", opp: "şişman", ex: "Derya ve Zeynep zayıf.", exAr: "ديريا وزينب نحيفتان." },
+    { tr: "şişman", pr: "شيشمان", ar: "سمين", cat: "adj", opp: "zayıf", ex: "Onlar şişman değil.", exAr: "هما ليستا سمينتين." },
+    { tr: "aç", pr: "آتش", ar: "جائع", cat: "adj", ex: "Aç mısınız? — Evet, çok açız.", exAr: "هل أنتم جائعون؟ — نعم، جائعون جداً." },
+    { tr: "yorgun", pr: "يورگون", ar: "متعب", cat: "adj", ex: "Sen bugün yorgun musun?", exAr: "هل أنت متعب اليوم؟" },
+    { tr: "hasta", pr: "هاستا", ar: "مريض", cat: "adj", ex: "Evet, çok hastayım.", exAr: "نعم، أنا مريض جداً." },
+    { tr: "evli", pr: "إيڤلي", ar: "متزوّج", cat: "adj", opp: "bekâr", ex: "Onlar evli mi?", exAr: "هل هم متزوجون؟" },
+    { tr: "bekâr", pr: "بيكيار", ar: "أعزب", cat: "adj", opp: "evli", ex: "Ben bekârım.", exAr: "أنا أعزب." },
+    { tr: "yoğun", pr: "يووون", ar: "مشغول جداً / مزدحم", cat: "adj", ex: "İşteyim. Çok yoğunum.", exAr: "أنا في العمل. مشغولة جداً." },
+    { tr: "başarılı", pr: "باشارِلِ", ar: "ناجح", cat: "adj", ex: "Sen başarılı bir öğretmensin.", exAr: "أنت معلّم ناجح." },
+    { tr: "tehlikeli", pr: "تيهليكيلي", ar: "خطير", cat: "adj", ex: "Sence bu iş tehlikeli mi?", exAr: "برأيك هل هذا العمل خطير؟" },
+    { tr: "ciddi", pr: "جيدّي", ar: "جادّ", cat: "adj", ex: "Ben ciddiyim.", exAr: "أنا جادّة." },
+    { tr: "komik", pr: "كوميك", ar: "مضحك / ظريف", cat: "adj", ex: "O çok komik ve eğlenceli.", exAr: "هي مضحكة وممتعة جداً." },
+    { tr: "eğlenceli", pr: "إيلينجيلي", ar: "ممتع / مسلٍّ", cat: "adj", ex: "Aylin çok eğlenceli.", exAr: "أيلين ممتعة جداً." },
+    { tr: "sosyal", pr: "سوسيال", ar: "اجتماعي", cat: "adj", ex: "Aylin çok sosyal.", exAr: "أيلين اجتماعية جداً." },
+    { tr: "kıskanç", pr: "كِسكانتش", ar: "غيور", cat: "adj", ex: "Sen kıskanç mısın?", exAr: "هل أنت غيور؟" },
+    { tr: "tuzlu", pr: "توزلو", ar: "مالح", cat: "adj", ex: "Hayır, yemek tuzlu değil.", exAr: "لا، الأكل ليس مالحاً." },
+    { tr: "sıcak", pr: "سِجاك", ar: "حارّ / ساخن", cat: "adj", ex: "Gündüz çok sıcak.", exAr: "النهار حار جداً." },
+
+    // ---------- colors ----------
+    { tr: "kırmızı", pr: "كِرمِزِ", ar: "أحمر", cat: "colors", ex: "Kırmızı bir çanta.", exAr: "حقيبة حمراء." },
+    { tr: "pembe", pr: "پيمبه", ar: "زهري", cat: "colors", ex: "Sandalye pembe.", exAr: "الكرسي زهري." },
+    { tr: "beyaz", pr: "بيياز", ar: "أبيض", cat: "colors", ex: "Odamda beyaz masa var.", exAr: "في غرفتي طاولة بيضاء." },
+    { tr: "sarı", pr: "سارِ", ar: "أصفر", cat: "colors", ex: "Yerde sarı halı var.", exAr: "على الأرض سجادة صفراء." },
+    { tr: "kahverengi", pr: "كاهڤيرينگي", ar: "بنّي", cat: "colors", ex: "Kahverengi sandalye var.", exAr: "يوجد كرسي بنّي." },
+
+    // ---------- food ----------
+    { tr: "yiyecek", pr: "يييجيك", ar: "طعام / مأكولات", cat: "food", ex: "Kantinde yiyecekler var.", exAr: "في المقصف مأكولات." },
+    { tr: "içecek", pr: "إيتشيجيك", ar: "مشروب", cat: "food", ex: "Kantinde içecekler var.", exAr: "في المقصف مشروبات." },
+    { tr: "domates", pr: "دوماتيس", ar: "بندورة / طماطم", cat: "food", ex: "1 kilo domates 1 lira.", exAr: "كيلو البندورة بليرة." },
+    { tr: "süt", pr: "سوت", ar: "حليب", cat: "food", ex: "1 litre süt 1 lira.", exAr: "لتر الحليب بليرة." },
+    { tr: "su", pr: "سو", ar: "ماء", cat: "food", ex: "Bir şişe su kaç lira?", exAr: "بكم زجاجة الماء؟" },
+
+    // ---------- other ----------
+    { tr: "bütün", pr: "بوتون", ar: "كلّ / جميع", cat: "other", ex: "Bütün öğrenciler kantinde.", exAr: "جميع الطلاب في المقصف." },
+    { tr: "birçok", pr: "بيرتشوك", ar: "كثير من", cat: "other", ex: "Onun birçok arkadaşı var.", exAr: "عندها أصدقاء كثيرون." },
+    { tr: "fark", pr: "فارك", ar: "فرق / اختلاف", cat: "other", ex: "Farkları yazalım.", exAr: "لنكتب الفروق." },
+    { tr: "aramak", pr: "آراماك", ar: "يتّصل / يبحث", cat: "other", ex: "Kardeşim bugün evde değil, onu aramayın.", exAr: "أخي ليس في البيت اليوم، لا تتصلوا به." },
+    { tr: "buyurun", pr: "بويورون", ar: "تفضّل / تفضّلوا", cat: "other", ex: "Buyurun, anahtarlarınız.", exAr: "تفضّل، مفاتيحك." },
+    { tr: "İngiliz", pr: "إينگيليز", ar: "إنجليزي", cat: "other", ex: "Sen İngiliz değil misin?", exAr: "ألستَ إنجليزياً؟" },
+    { tr: "Rus", pr: "روس", ar: "روسي", cat: "other", ex: "Evet, İngiliz değilim. Rusum.", exAr: "صحيح، لست إنجليزياً. أنا روسي." }
+  ],
+
+  // Numbers (Sayılar)
+  numbers: [
+    [0, "sıfır", "سِفِر"], [1, "bir", "بير"], [2, "iki", "إيكي"], [3, "üç", "أوتش"], [4, "dört", "دورت"],
+    [5, "beş", "بيش"], [6, "altı", "آلتِ"], [7, "yedi", "ييدي"], [8, "sekiz", "سيكيز"], [9, "dokuz", "دوكوز"],
+    [10, "on", "أون"], [20, "yirmi", "ييرمي"], [30, "otuz", "أوتوز"], [40, "kırk", "كِرك"], [50, "elli", "إيلّي"],
+    [60, "altmış", "آلتمِش"], [70, "yetmiş", "ييتميش"], [80, "seksen", "سيكسين"], [90, "doksan", "دوكسان"],
+    [100, "yüz", "يوز"], [1000, "bin", "بين"], [1000000, "bir milyon", "بير ميليون"], [1000000000, "bir milyar", "بير ميليار"]
+  ],
+
+  ordinals: [
+    ["1.", "birinci", "بيرينجي"], ["2.", "ikinci", "إيكينجي"], ["3.", "üçüncü", "أوتشونجو"], ["4.", "dördüncü", "دوردونجو"],
+    ["5.", "beşinci", "بيشينجي"], ["6.", "altıncı", "آلتِنجِ"], ["7.", "yedinci", "ييدينجي"], ["8.", "sekizinci", "سيكيزينجي"],
+    ["9.", "dokuzuncu", "دوكوزونجو"], ["10.", "onuncu", "أونونجو"]
+  ],
+
+  // Key sentences at the top of each section of the book
+  keySentences: [
+    { part: "A", tr: "Sınıfta kim var?", ar: "مَن في الصف؟" },
+    { part: "A", tr: "Sınıfta öğrenciler var.", ar: "في الصف طلاب." },
+    { part: "A", tr: "Masada kitap var mı?", ar: "هل على الطاولة كتاب؟" },
+    { part: "A", tr: "Hayır, masada kitap yok.", ar: "لا، لا يوجد كتاب على الطاولة." },
+    { part: "A", tr: "Öğretmen nerede?", ar: "أين المعلّم؟" },
+    { part: "A", tr: "Öğretmen ofiste.", ar: "المعلّم في المكتب." },
+    { part: "A", tr: "Kalem kimde?", ar: "القلم مع مَن؟" },
+    { part: "A", tr: "Kalem Ahmet'te.", ar: "القلم مع أحمد." },
+    { part: "B", tr: "Okulda kaç sınıf var?", ar: "كم صفاً في المدرسة؟" },
+    { part: "B", tr: "Kaç yaşındasın?", ar: "كم عمرك؟" },
+    { part: "B", tr: "Yirmi beş yaşındayım.", ar: "عمري خمسة وعشرون عاماً." },
+    { part: "B", tr: "Telefon numaran kaç?", ar: "ما رقم هاتفك؟" },
+    { part: "B", tr: "Bu kitap kaç lira?", ar: "بكم ليرة هذا الكتاب؟" },
+    { part: "B", tr: "Bir litre süt ne kadar?", ar: "بكم لتر الحليب؟" },
+    { part: "B", tr: "Saat kaç?", ar: "كم الساعة؟" },
+    { part: "B", tr: "Ders saat kaçta?", ar: "الدرس في أي ساعة؟" },
+    { part: "B", tr: "Benim evim birinci katta.", ar: "بيتي في الطابق الأول." },
+    { part: "C", tr: "Neredesin?", ar: "أين أنت؟" },
+    { part: "C", tr: "Evdeyim.", ar: "أنا في البيت." },
+    { part: "C", tr: "Ben öğrenciyim.", ar: "أنا طالب." },
+    { part: "C", tr: "Sen işte misin?", ar: "هل أنت في العمل؟" },
+    { part: "C", tr: "Hayır, işte değilim.", ar: "لا، لست في العمل." },
+    { part: "C", tr: "Siz kaç kişisiniz?", ar: "كم شخصاً أنتم؟" },
+    { part: "C", tr: "Geçmiş olsun.", ar: "سلامتك / الله يشفيك." }
+  ],
+
+  dialogues: [
+    {
+      id: "okul", part: "A", type: "reading", title: "Okul", titleAr: "المدرسة — نص القراءة", page: 22,
+      speakers: { Kate: "f" },
+      lines: [
+        { s: "Kate", tr: "Merhaba! Benim adım Kate. Ben İspanyalıyım.", ar: "مرحباً! اسمي كيت. أنا إسبانية." },
+        { s: "Kate", tr: "Burası benim okulum. Okul Tophane'de. Okul 6 katlı.", ar: "هذه مدرستي. المدرسة في توپهانه. المدرسة من 6 طوابق." },
+        { s: "Kate", tr: "Alt katta ofisler var. Ofisler büyük.", ar: "في الطابق السفلي مكاتب. المكاتب كبيرة." },
+        { s: "Kate", tr: "Ofislerde masalar, koltuklar, bilgisayarlar, dolaplar var. Sekreterler ofiste.", ar: "في المكاتب طاولات وكنبات وحواسيب وخزائن. السكرتيرات في المكتب." },
+        { s: "Kate", tr: "Okulda 10 sınıf var. Her sınıfta 15 öğrenci var.", ar: "في المدرسة 10 صفوف. في كل صف 15 طالباً." },
+        { s: "Kate", tr: "Şimdi sınıflarda öğrenciler yok, çünkü öğrenciler teneffüste.", ar: "الآن لا يوجد طلاب في الصفوف، لأن الطلاب في الفسحة." },
+        { s: "Kate", tr: "Okulda çok güzel bir kantin var. Kantin üst katta.", ar: "في المدرسة مقصف جميل جداً. المقصف في الطابق العلوي." },
+        { s: "Kate", tr: "Kantin çok kalabalık. Bütün öğrenciler kantinde.", ar: "المقصف مزدحم جداً. كل الطلاب في المقصف." }
+      ]
+    },
+    {
+      id: "oda", part: "A", type: "listening", title: "Benim Odam", titleAr: "غرفتي — نص استماع", page: 25,
+      speakers: { "": "f" },
+      lines: [
+        { s: "", tr: "Burası benim odam.", ar: "هذه غرفتي." },
+        { s: "", tr: "Odamda yatak, beyaz masa, sandalye, yastıklar, halı, ayna, dolap var.", ar: "في غرفتي سرير وطاولة بيضاء وكرسي ووسائد وسجادة ومرآة وخزانة." },
+        { s: "", tr: "Yatakta iki yastık var. Yerde sarı halı var.", ar: "على السرير وسادتان. على الأرض سجادة صفراء." },
+        { s: "", tr: "Sandalye pembe. Masada lamba var.", ar: "الكرسي زهري. على الطاولة مصباح." },
+        { s: "", tr: "Duvarda aynalar, raflar var.", ar: "على الجدار مرايا ورفوف." }
+      ]
+    },
+    {
+      id: "kac", part: "B", type: "reading", title: "Kaç?", titleAr: "كم؟ — حوارات قصيرة", page: 27,
+      speakers: { A: "f", B: "m" },
+      lines: [
+        { s: "A", tr: "Affedersiniz, Kadıköy otobüsünün numarası kaç?", ar: "عفواً، ما رقم باص قاضي كوي؟" },
+        { s: "B", tr: "On dokuz.", ar: "تسعة عشر." },
+        { s: "A", tr: "Senin evin nerede?", ar: "أين بيتك؟" },
+        { s: "B", tr: "Benim evim iki yüz dokuzuncu sokakta.", ar: "بيتي في الشارع 209." },
+        { s: "A", tr: "Kaç yaşındasın?", ar: "كم عمرك؟" },
+        { s: "B", tr: "Otuz yaşındayım.", ar: "عمري ثلاثون سنة." },
+        { s: "A", tr: "Saat kaç?", ar: "كم الساعة؟" },
+        { s: "B", tr: "Saat iki.", ar: "الساعة الثانية." },
+        { s: "A", tr: "Bir kilo domates kaç lira?", ar: "كيلو البندورة بكم ليرة؟" },
+        { s: "B", tr: "Bir lira.", ar: "بليرة واحدة." },
+        { s: "A", tr: "Acil servisin numarası kaç?", ar: "ما رقم الطوارئ؟" },
+        { s: "B", tr: "Yüz on iki.", ar: "112." },
+        { s: "A", tr: "Buyurun, anahtarlarınız. Oda numaranız on altı.", ar: "تفضّل، مفاتيحك. رقم غرفتك 16." },
+        { s: "B", tr: "Teşekkür ederim.", ar: "شكراً." }
+      ]
+    },
+    {
+      id: "otel", part: "B", type: "listening", title: "Otel Formu", titleAr: "استمارة الفندق — نص استماع", page: 29,
+      speakers: { A: "f", B: "m" },
+      lines: [
+        { s: "A", tr: "Merhaba. Hoş geldiniz.", ar: "مرحباً. أهلاً وسهلاً." },
+        { s: "B", tr: "Hoş bulduk.", ar: "أهلاً بك (رداً على الترحيب)." },
+        { s: "A", tr: "Adınız nedir?", ar: "ما اسمك؟" },
+        { s: "B", tr: "Derya Günay.", ar: "ديريا گوناي." },
+        { s: "A", tr: "Adresiniz nedir?", ar: "ما عنوانك؟" },
+        { s: "B", tr: "Gül Mahallesi, 7. Sokak, No: 34, Emek / Ankara.", ar: "حي گول، الشارع السابع، رقم 34، إيمك / أنقرة." },
+        { s: "A", tr: "Telefon numaranız nedir?", ar: "ما رقم هاتفك؟" },
+        { s: "B", tr: "0525 340 84 67.", ar: "0525 340 84 67." },
+        { s: "A", tr: "Ne zaman geliyorsunuz?", ar: "متى ستأتي؟" },
+        { s: "B", tr: "29 Kasım'da.", ar: "في 29 تشرين الثاني." },
+        { s: "A", tr: "Kaç gün kalacaksınız?", ar: "كم يوماً ستبقى؟" },
+        { s: "B", tr: "4 gün.", ar: "4 أيام." },
+        { s: "A", tr: "Kaydınız tamam. Oda numaranız 315.", ar: "تسجيلك تمّ. رقم غرفتك 315." }
+      ]
+    },
+    {
+      id: "neredesin1", part: "C", type: "reading", title: "Neredesin? (1)", titleAr: "أين أنت؟ (١) — أصلي ومحمد", page: 31,
+      speakers: { "Aslı": "f", "Mehmet": "m" },
+      lines: [
+        { s: "Aslı", tr: "Merhaba Mehmet! Nasılsın?", ar: "مرحباً محمد! كيف حالك؟" },
+        { s: "Mehmet", tr: "İyiyim Aslı, sen nasılsın?", ar: "بخير يا أصلي، وأنتِ كيف حالك؟" },
+        { s: "Aslı", tr: "İşteyim. Çok yoğunum. Sen neredesin?", ar: "أنا في العمل. مشغولة جداً. وأنت أين أنت؟" },
+        { s: "Mehmet", tr: "Ben de işteyim. Görüşürüz.", ar: "وأنا أيضاً في العمل. إلى اللقاء." },
+        { s: "Aslı", tr: "Görüşürüz.", ar: "إلى اللقاء." }
+      ]
+    },
+    {
+      id: "neredesin2", part: "C", type: "reading", title: "Neredesin? (2)", titleAr: "أين أنت؟ (٢) — علي وجَم", page: 31,
+      speakers: { "Ali": "m", "Cem": "m" },
+      lines: [
+        { s: "Ali", tr: "Selam Cem. Neredesiniz?", ar: "أهلاً جَم. أين أنتم؟" },
+        { s: "Cem", tr: "Selam Ali. Can Kafe'deyiz.", ar: "أهلاً علي. نحن في مقهى جان." },
+        { s: "Ali", tr: "Orası nerede?", ar: "وأين ذلك المكان؟" },
+        { s: "Cem", tr: "Taksim yedinci Cadde'de.", ar: "في الشارع السابع في تقسيم." },
+        { s: "Ali", tr: "Siz kaç kişisiniz?", ar: "كم شخصاً أنتم؟" },
+        { s: "Cem", tr: "İki kişiyiz. Mine de burada.", ar: "نحن شخصان. مينه أيضاً هنا." },
+        { s: "Ali", tr: "Tamam, orada görüşürüz.", ar: "حسناً، نلتقي هناك." }
+      ]
+    },
+    {
+      id: "neredesin3", part: "C", type: "reading", title: "Neredesin? (3)", titleAr: "أين أنت؟ (٣) — پينار ونالان", page: 31,
+      speakers: { "Pınar": "f", "Nalan": "f" },
+      lines: [
+        { s: "Pınar", tr: "Merhaba Nalan! Ben okuldayım, sen okulda mısın?", ar: "مرحباً نالان! أنا في المدرسة، هل أنتِ في المدرسة؟" },
+        { s: "Nalan", tr: "Merhaba Pınar! Hayır, okulda değilim. Evdeyim.", ar: "مرحباً پينار! لا، لست في المدرسة. أنا في البيت." },
+        { s: "Pınar", tr: "Neden, hasta mısın?", ar: "لماذا؟ هل أنتِ مريضة؟" },
+        { s: "Nalan", tr: "Evet, çok hastayım.", ar: "نعم، أنا مريضة جداً." },
+        { s: "Pınar", tr: "Geçmiş olsun.", ar: "سلامتك." },
+        { s: "Nalan", tr: "Sağ ol.", ar: "شكراً." }
+      ]
+    },
+    {
+      id: "arkadasim", part: "C", type: "listening", title: "Ben ve Arkadaşım", titleAr: "أنا وصديقتي — نص استماع", page: 33,
+      speakers: { "": "f" },
+      lines: [
+        { s: "", tr: "Ben ve Aylin çok iyi arkadaşız. Biz aynı işteyiz.", ar: "أنا وأيلين صديقتان جيدتان جداً. نعمل في نفس العمل." },
+        { s: "", tr: "Ben mühendisim, o mimar.", ar: "أنا مهندسة، وهي مهندسة معمارية." },
+        { s: "", tr: "Bizim bazı karakterlerimiz aynı, bazı karakterlerimiz farklı.", ar: "بعض صفاتنا متشابهة، وبعضها مختلف." },
+        { s: "", tr: "Ben ve Aylin çok çalışkan, düzenli ve dikkatliyiz.", ar: "أنا وأيلين مجتهدتان ومنظّمتان ومنتبهتان جداً." },
+        { s: "", tr: "Ama Aylin işte yavaş, ben hızlıyım.", ar: "لكن أيلين بطيئة في العمل، وأنا سريعة." },
+        { s: "", tr: "Aylin çok sosyal. Onun birçok arkadaşı var.", ar: "أيلين اجتماعية جداً. عندها أصدقاء كثيرون." },
+        { s: "", tr: "Ben daha sessiz ve sakinim.", ar: "أنا أهدأ وأقل كلاماً." },
+        { s: "", tr: "O çok komik ve eğlenceli ama ben ciddiyim.", ar: "هي مضحكة وممتعة جداً، لكنني جادّة." },
+        { s: "", tr: "Biz her zaman beraberiz. Aylin çok iyi bir insan. Onu çok seviyorum.", ar: "نحن دائماً معاً. أيلين إنسانة طيبة جداً. أحبّها كثيراً." }
+      ]
+    },
+    {
+      id: "oyun", part: "C", type: "game", title: "Eğlenelim Öğrenelim", titleAr: "لنتعلّم ونحن نلعب — لعبة التخمين", page: 34,
+      speakers: { A: "f", B: "m" },
+      lines: [
+        { s: "A", tr: "Bu sınıfta mı?", ar: "هل هو في الصف؟" },
+        { s: "B", tr: "Evet, sınıfta.", ar: "نعم، في الصف." },
+        { s: "A", tr: "Masada var mı?", ar: "هل هو على الطاولة؟" },
+        { s: "B", tr: "Hayır, yok.", ar: "لا، ليس عليها." },
+        { s: "A", tr: "Duvarda mı?", ar: "هل هو على الجدار؟" },
+        { s: "B", tr: "Evet, duvarda.", ar: "نعم، على الجدار." },
+        { s: "A", tr: "Bu saat mi?", ar: "هل هو الساعة؟" },
+        { s: "B", tr: "Hayır, saat değil.", ar: "لا، ليس الساعة." },
+        { s: "A", tr: "Tahta mı?", ar: "هل هو السبورة؟" },
+        { s: "B", tr: "Evet, doğru cevap tahta.", ar: "نعم، الجواب الصحيح: السبورة." }
+      ]
+    }
+  ],
+
+  culture: {
+    title: "Kültürden Kültüre: Mağazalar",
+    items: [
+      { country: "Mısır", ar: "مصر", tr: "Mısır'da birçok mağaza sabah, öğleden sonra ve akşam açıktır. İnsanlar genellikle akşam alışverişte. Çünkü gündüz çok sıcak. Mağazalar cuma günü tatildir.", trAr: "في مصر محلات كثيرة مفتوحة صباحاً وبعد الظهر ومساءً. الناس يتسوّقون عادةً في المساء لأن النهار حار جداً. المحلات عطلة يوم الجمعة." },
+      { country: "Japonya", ar: "اليابان", tr: "Japonya'da mağazalar saat 10.00'da açıktır. Birçok mağaza haftada bir gün kapalıdır ama bu gün her zaman pazar değildir.", trAr: "في اليابان تفتح المحلات الساعة 10. كثير منها يغلق يوماً في الأسبوع، لكنه ليس دائماً الأحد." },
+      { country: "Türkiye", ar: "تركيا", tr: "Türkiye'de mağazalar genellikle 09.00'da açıktır. Kapalı gün yoktur. Hafta sonu mağazalar çok kalabalıktır.", trAr: "في تركيا تفتح المحلات عادةً الساعة 9. لا يوجد يوم إغلاق. في نهاية الأسبوع المحلات مزدحمة جداً." }
+    ]
+  }
+};
+
+</script>
+<script>
+(() => {
+const U = window.UNIT2;
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg>';
+const store = { get(k, d) { try { const v = localStorage.getItem("u2:" + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+                set(k, v) { try { localStorage.setItem("u2:" + k, JSON.stringify(v)); } catch (e) {} } };
+const toast = (m) => { const t = $("#toast"); t.textContent = m; t.classList.add("show"); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("show"), 2200); };
+const lower = s => s.replace(/I/g, "ı").replace(/İ/g, "i").toLowerCase();
+
+/* ---------------- Turkish → Arabic letters ---------------- */
+function translitWord(w) {
+  w = lower(w).replace(/[^a-zçğıöşüâîû]/g, "");
+  if (!w) return "";
+  const V = "aeıioöuüâîû", C = {b:"ب",c:"ج",ç:"تش",d:"د",f:"ف",g:"گ",h:"ه",j:"ژ",k:"ك",l:"ل",m:"م",n:"ن",p:"پ",r:"ر",s:"س",ş:"ش",t:"ت",v:"ڤ",y:"ي",z:"ز"};
+  let out = "";
+  for (let i = 0; i < w.length; i++) {
+    const ch = w[i], first = i === 0, last = i === w.length - 1;
+    if (ch === "ğ") continue;
+    if (V.includes(ch)) {
+      const prevV = i > 0 && (V.includes(w[i-1]) || w[i-1] === "ğ");
+      if (first || prevV) {
+        out += {a:"آ",â:"آ",e:"إي",ı:"إ",i:"إي",î:"إي",o:"أو",ö:"أو",u:"أو",ü:"أو",û:"أو"}[ch];
+        if (prevV && "ei".includes(ch)) out = out.slice(0,-2) + "ئي";
+        continue;
+      }
+      if (ch === "ı") { out += "ِ"; continue; }
+      if (ch === "e") { out += last ? "ه" : "ي"; continue; }
+      out += {a:"ا",â:"ا",i:"ي",î:"ي",o:"و",ö:"و",u:"و",ü:"و",û:"و"}[ch];
+    } else out += C[ch] || "";
+  }
+  return out;
+}
+const translit = s => s.split(/(\s+|[.,!?;:—–\-\/]+)/).map(p => /[a-zçğıöşüâîûA-ZÇĞİÖŞÜ]/.test(p) ? translitWord(p) : (/\d/.test(p) ? p : p.replace(/\?/g,"؟").replace(/,/g,"،"))).join("").replace(/'/g,"");
+
+/* ---------------- speech ---------------- */
+let voice = null, slow = store.get("slow", false);
+const synth = window.speechSynthesis;
+function pickVoice() {
+  if (!synth) return;
+  const vs = synth.getVoices().filter(v => /^tr/i.test(v.lang));
+  const rank = v => (/natural|online|neural/i.test(v.name) ? 3 : 0) + (/google/i.test(v.name) ? 2 : 0) + (v.localService ? 0 : 1);
+  voice = vs.sort((a, b) => rank(b) - rank(a))[0] || null;
+  const b = $("#voiceBanner");
+  if (!voice && synth.getVoices().length) {
+    b.innerHTML = '<b>ما لقيت صوت تركي على جهازك.</b> الأزرار رح تفتح النطق في ترجمة Google. لتشغيله داخل الصفحة: افتحها من <b>Microsoft Edge</b> أو <b>Chrome</b>، أو أضف صوتاً تركياً من إعدادات ويندوز ← الوقت واللغة ← الكلام ← إضافة أصوات ← Türkçe.';
+    b.classList.add("show");
+  } else b.classList.remove("show");
+}
+if (synth) { pickVoice(); synth.onvoiceschanged = pickVoice; setTimeout(pickVoice, 800); }
+let speakingBtn = null;
+function speak(text, btn, opts = {}) {
+  text = text.replace(/[‎]/g, "");
+  if (!synth || !voice) {
+    if (synth && !synth.getVoices().length) { /* voices not loaded yet */ }
+    if (!voice) { window.open("https://translate.google.com/?sl=tr&tl=ar&op=translate&text=" + encodeURIComponent(text), "_blank"); return Promise.resolve(); }
+  }
+  synth.cancel();
+  if (speakingBtn) speakingBtn.classList.remove("speaking");
+  return new Promise(res => {
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = voice; u.lang = voice.lang || "tr-TR";
+    u.rate = (opts.rate || 1) * (slow ? 0.62 : 0.92); u.pitch = opts.pitch || 1;
+    if (btn) { btn.classList.add("speaking"); speakingBtn = btn; }
+    u.onend = u.onerror = () => { if (btn) btn.classList.remove("speaking"); res(); };
+    synth.speak(u);
+  });
+}
+const playBtn = (text, cls = "") => `<button class="play ${cls}" data-say="${esc(text)}" aria-label="اسمع">${PLAY}</button>`;
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-say]"); if (b) { e.stopPropagation(); speak(b.dataset.say, b); }
+});
+
+/* ---------------- toolbar ---------------- */
+const root = document.documentElement;
+const th = store.get("theme", null); if (th) root.dataset.theme = th;
+$("#themeBtn").onclick = () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark"; store.set("theme", root.dataset.theme);
+};
+const setSlow = v => { slow = v; store.set("slow", v); $("#slowBtn").setAttribute("aria-pressed", v); };
+setSlow(slow); $("#slowBtn").onclick = () => { setSlow(!slow); toast(slow ? "النطق البطيء مفعّل 🐢" : "النطق بالسرعة العادية"); };
+let showPr = store.get("pr", true);
+const setPr = v => { showPr = v; store.set("pr", v); document.body.classList.toggle("no-pr", !v); $("#prBtn").setAttribute("aria-pressed", v); };
+setPr(showPr); $("#prBtn").onclick = () => setPr(!showPr);
+
+/* ---------------- stats & progress ---------------- */
+$("#sWords").textContent = U.vocab.length; $("#sDlg").textContent = U.dialogues.length; $("#sSent").textContent = U.keySentences.length;
+let learned = new Set(store.get("learned", []));
+function updateProgress() {
+  const n = U.vocab.filter(v => learned.has(v.tr)).length, p = Math.round(n / U.vocab.length * 100);
+  $("#ring").style.setProperty("--p", p); $("#pct").textContent = p + "%"; $("#pctLbl").textContent = `حفظت ${n} من ${U.vocab.length}`;
+  $$(".chip").forEach(c => { const cat = c.dataset.cat; });
+}
+function toggleLearned(tr, force) {
+  const on = force ?? !learned.has(tr); on ? learned.add(tr) : learned.delete(tr);
+  store.set("learned", [...learned]); updateProgress();
+}
+
+/* ---------------- words ---------------- */
+let cat = "all", show = "all", q = "";
+const catOf = id => U.categories.find(c => c.id === id);
+function renderChips() {
+  const count = id => U.vocab.filter(v => id === "all" || v.cat === id).length;
+  $("#chips").innerHTML = [{ id: "all", ar: "الكل", icon: "📚" }, ...U.categories].map(c =>
+    `<button class="chip ${c.id === cat ? "on" : ""}" data-cat="${c.id}">${c.icon} ${c.ar}<span class="n">${count(c.id)}</span></button>`).join("");
+}
+const norm = s => lower(s).normalize("NFD").replace(/[̀-ًͯ-ْ]/g, "").replace(/ı/g, "i");
+function filtered() {
+  const nq = norm(q.trim());
+  return U.vocab.filter(v => (cat === "all" || v.cat === cat) &&
+    (show === "all" || (show === "done") === learned.has(v.tr)) &&
+    (!nq || norm(v.tr).includes(nq) || norm(v.ar).includes(nq) || norm(v.pr).includes(nq) || norm(v.ex).includes(nq)));
+}
+function renderGrid() {
+  const list = filtered();
+  $("#grid").innerHTML = list.length ? list.map(v => `
+    <article class="word ${learned.has(v.tr) ? "learned" : ""}" data-w="${esc(v.tr)}">
+      <div class="row">${playBtn(v.tr)}<div class="t">${esc(v.tr)}</div><button class="learn" data-learn="${esc(v.tr)}" aria-label="حفظتها">✓</button></div>
+      <div class="p">${esc(v.pr)}</div>
+      <div class="m">${esc(v.ar)}</div>
+      ${v.opp ? `<div class="opp">عكسها: <span class="tr">${esc(v.opp)}</span></div>` : ""}
+      <div class="ex">${playBtn(v.ex, "sm")}<div><span class="tr">${esc(v.ex)}</span>${esc(v.exAr)}</div></div>
+    </article>`).join("") : `<div class="empty">ما في نتائج 🤷‍♂️</div>`;
+}
+$("#chips").onclick = e => { const c = e.target.closest(".chip"); if (!c) return; cat = c.dataset.cat; renderChips(); renderGrid(); fIdx = 0; renderFlash(); };
+$("#grid").onclick = e => { const l = e.target.closest("[data-learn]"); if (!l) return; toggleLearned(l.dataset.learn); l.closest(".word").classList.toggle("learned", learned.has(l.dataset.learn)); };
+$("#q").oninput = e => { q = e.target.value; renderGrid(); };
+$$("[data-show]").forEach(b => b.onclick = () => { show = b.dataset.show; $$("[data-show]").forEach(x => x.classList.toggle("on", x === b)); renderGrid(); fIdx = 0; renderFlash(); });
+$$("[data-view]").forEach(b => b.onclick = () => {
+  $$("[data-view]").forEach(x => x.classList.toggle("on", x === b));
+  const f = b.dataset.view === "flash"; $("#grid").style.display = f ? "none" : ""; $("#flash").classList.toggle("show", f); if (f) renderFlash();
+});
+/* flashcards */
+let fIdx = 0, fList = [];
+function renderFlash() {
+  fList = filtered(); if (!fList.length) { $("#fTr").textContent = "—"; $("#fCount").textContent = "ما في كلمات بهذا الفلتر"; return; }
+  fIdx = (fIdx + fList.length) % fList.length; const v = fList[fIdx];
+  $("#fcard").classList.remove("flip");
+  setTimeout(() => { $("#fTr").textContent = v.tr; $("#fAr").textContent = v.ar; $("#fPr").textContent = v.pr; $("#fEx").innerHTML = `<span class="tr">${esc(v.ex)}</span><br>${esc(v.exAr)}`; }, 120);
+  $("#fCount").textContent = `${fIdx + 1} / ${fList.length}` + (learned.has(v.tr) ? " · ✓ محفوظة" : "");
+}
+$("#fcard").onclick = () => $("#fcard").classList.toggle("flip");
+$("#fPlay").onclick = e => fList[fIdx] && speak(fList[fIdx].tr, e.currentTarget);
+$("#fYes").onclick = () => { if (!fList[fIdx]) return; toggleLearned(fList[fIdx].tr, true); renderGrid(); if (show === "todo") renderFlash(); else { fIdx++; renderFlash(); } };
+$("#fNo").onclick = () => { if (!fList[fIdx]) return; toggleLearned(fList[fIdx].tr, false); renderGrid(); fIdx++; renderFlash(); };
+document.addEventListener("keydown", e => {
+  if (!$("#flash").classList.contains("show") || /INPUT/.test(document.activeElement.tagName)) return;
+  if (e.code === "Space") { e.preventDefault(); $("#fcard").classList.toggle("flip"); }
+  if (e.key === "ArrowLeft") { fIdx++; renderFlash(); } if (e.key === "ArrowRight") { fIdx--; renderFlash(); }
+});
+
+/* ---------------- numbers ---------------- */
+const ONES = ["", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"];
+const TENS = ["", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"];
+function under1000(n) { const h = Math.floor(n / 100), t = Math.floor(n % 100 / 10), o = n % 10;
+  return [h ? (h === 1 ? "yüz" : ONES[h] + " yüz") : "", TENS[t], ONES[o]].filter(Boolean).join(" "); }
+function trNum(n) {
+  if (n === 0) return "sıfır";
+  const parts = [], mil = Math.floor(n / 1e6), th = Math.floor(n % 1e6 / 1000), r = n % 1000;
+  if (mil) parts.push(under1000(mil) + " milyon");
+  if (th) parts.push(th === 1 ? "bin" : under1000(th) + " bin");
+  if (r) parts.push(under1000(r));
+  return parts.join(" ");
+}
+function lastVowel(w) { const m = lower(w).match(/[aeıioöuü](?=[^aeıioöuü]*$)/); return m ? m[0] : "e"; }
+function ordinal(w) { const v = lastVowel(w), I = { a: "ı", ı: "ı", e: "i", i: "i", o: "u", u: "u", ö: "ü", ü: "ü" }[v];
+  return /[aeıioöuü]$/.test(w) ? w + "nc" + I : w + I + "nc" + I; }
+function renderNum() {
+  const raw = $("#numIn").value.replace(/[^\d]/g, "").slice(0, 9); const out = $("#numOut");
+  if (!raw) { out.innerHTML = '<span class="pr-line">اكتب رقماً…</span>'; return; }
+  const n = parseInt(raw, 10), w = trNum(n), last = w.split(" ").pop(), ord = w.split(" ").slice(0, -1).concat(ordinal(last)).join(" ");
+  out.innerHTML = `<span class="tr">${w}</span><div class="pr-line">${translit(w)}</div>
+    ${n ? `<div class="ord">بالترتيب (${n.toLocaleString("en")}.): <span class="tr" style="display:inline;font-size:15px;color:var(--red)">${ord}</span> ${playBtn(ord, "sm")}</div>` : ""}`;
+  $("#numPlay").dataset.say = w;
+}
+$("#numPlay").innerHTML = PLAY; $("#numIn").oninput = renderNum; renderNum();
+$("#numGrid").innerHTML = U.numbers.map(([n, w, p]) => `<button class="nb" data-say="${w}"><b>${n >= 1e6 ? (n === 1e6 ? "1M" : "1B") : n}</b><span>${w}</span><small>${p}</small></button>`).join("");
+$("#ordGrid").innerHTML = U.ordinals.map(([n, w, p]) => `<button class="nb" data-say="${w}"><b>${n}</b><span>${w}</span><small>${p}</small></button>`).join("");
+let mathAns = null;
+$("#mathNew").onclick = e => {
+  const ops = [["artı", (a, b) => a + b], ["eksi", (a, b) => a - b], ["çarpı", (a, b) => a * b], ["bölü", (a, b) => a / b]];
+  const [name, f] = ops[Math.floor(Math.random() * 4)]; let a = 2 + Math.floor(Math.random() * 40), b = 2 + Math.floor(Math.random() * 9);
+  if (name === "eksi" && b > a) [a, b] = [b, a]; if (name === "bölü") a = b * (1 + Math.floor(Math.random() * 10)); if (name === "çarpı") a = 2 + Math.floor(Math.random() * 11);
+  mathAns = f(a, b); const s = `${trNum(a)} ${name} ${trNum(b)} kaç?`;
+  $("#mathQ").textContent = s; $("#mathA").value = ""; $("#mathFb").textContent = ""; speak(s, e.currentTarget); $("#mathA").focus();
+};
+$("#mathCheck").onclick = () => { if (mathAns == null) return; const ok = parseInt($("#mathA").value, 10) === mathAns;
+  $("#mathFb").innerHTML = ok ? `<span style="color:var(--ok)">Aferin! ✓ ${trNum(mathAns)}</span>` : `<span style="color:var(--red)">الجواب: ${mathAns} — <span class="tr">${trNum(mathAns)}</span></span>`; if (ok) speak("Aferin! " + trNum(mathAns)); };
+$("#mathA").onkeydown = e => { if (e.key === "Enter") $("#mathCheck").click(); };
+
+/* ---------------- grammar ---------------- */
+$("#gtabs").onclick = e => { const t = e.target.closest(".gtab"); if (!t) return; openG(t.dataset.p); };
+function openG(p) { $$(".gtab").forEach(x => x.classList.toggle("on", x.dataset.p === p)); $$(".gpane").forEach(x => x.classList.toggle("on", x.id === "g-" + p)); }
+$$(".part[data-g]").forEach(a => a.addEventListener("click", () => openG(a.dataset.g)));
+const HARD = "fstkçşhp";
+function daSuffix(word) {
+  const w = lower(word.trim()), v = lastVowel(w), A = "aıou".includes(v) ? "a" : "e", lastCh = w.slice(-1), D = HARD.includes(lastCh) ? "t" : "d";
+  return { v, A, D, lastCh, suf: D + A };
+}
+const exRow = (tr, ar, html) => `<div class="exl">${playBtn(tr, "sm")}<div class="tx"><span class="tr">${html || esc(tr)}</span><span class="a">${esc(ar)}</span></div></div>`;
+$("#daEx").innerHTML = [["Öğrenciler sınıfta.", "الطلاب في الصف.", "Öğrenciler sınıf<span class='suf'>ta</span>."], ["Bilgisayar masada.", "الحاسوب على الطاولة.", "Bilgisayar masa<span class='suf'>da</span>."], ["Kalem öğretmende.", "القلم مع المعلّم.", "Kalem öğretmen<span class='suf'>de</span>."], ["Çanta Ahmet'te.", "الحقيبة مع أحمد.", "Çanta Ahmet'<span class='suf'>te</span>."], ["Taksim İstanbul'da.", "تقسيم في إسطنبول.", "Taksim İstanbul'<span class='suf'>da</span>."]].map(r => exRow(...r)).join("");
+function renderDa() {
+  const raw = $("#daIn").value.trim().replace(/['’]/g, ""); if (!raw) { $("#daSteps").innerHTML = ""; $("#daRes").textContent = ""; return; }
+  const s = daSuffix(raw), proper = $("#daProper").checked, word = proper ? raw.charAt(0).toLocaleUpperCase("tr") + raw.slice(1) : raw, sep = proper ? "'" : "";
+  $("#daSteps").innerHTML = `
+    <div class="step"><span class="k">1</span><div>آخر حرف علّة في <span class="tr">${esc(word)}</span> هو <span class="pill">${s.v}</span> ← ${"aıou".includes(s.v) ? "حرف علّة خلفي (a ı o u) ← نستعمل <b>a</b>" : "حرف علّة أمامي (e i ö ü) ← نستعمل <b>e</b>"}</div></div>
+    <div class="step"><span class="k">2</span><div>آخر حرف هو <span class="pill ${HARD.includes(s.lastCh) ? "t" : "b"}">${s.lastCh}</span> ← ${HARD.includes(s.lastCh) ? "حرف قاسٍ من FıSTıKÇı ŞaHaP ← <b>t</b>" : "ليس قاسياً ← <b>d</b>"}</div></div>
+    <div class="step"><span class="k">3</span><div>النتيجة: <span class="tr">${esc(word)}${sep}<b class="suf">${s.suf}</b></span> = في / على / عند «${esc(word)}»</div></div>`;
+  $("#daRes").innerHTML = `${esc(word)}${sep}<span class="suf">${s.suf}</span>`; $("#daPlay").dataset.say = word + s.suf;
+}
+$("#daPlay").innerHTML = PLAY; $("#daIn").oninput = renderDa; $("#daProper").onchange = renderDa; renderDa();
+$("#daQuick").innerHTML = ["okul", "ev", "mutfak", "sınıf", "park", "otobüs", "kantin", "göz", "Ahmet", "Ankara"].map(w => `<button data-w="${w}">${w}</button>`).join("");
+$("#daQuick").onclick = e => { const b = e.target.closest("button"); if (!b) return; $("#daIn").value = b.dataset.w; $("#daProper").checked = /^[A-ZÇĞİÖŞÜ]/.test(b.dataset.w); renderDa(); };
+$("#varEx").innerHTML = [["Evde bilgisayar var.", "في البيت حاسوب."], ["Ofiste sekreter yok.", "لا يوجد سكرتير في المكتب."], ["Sokakta araba var mı?", "هل في الشارع سيارة؟"], ["Hayır, sokakta araba yok.", "لا، لا توجد سيارة في الشارع."], ["Odada ne var? — Odada yatak var.", "ماذا في الغرفة؟ — في الغرفة سرير."], ["Sınıfta kimler var?", "مَن في الصف؟"], ["Bende yirmi lira var.", "معي عشرون ليرة."], ["Sende sözlük var mı?", "هل معك قاموس؟"], ["İstanbul'da deniz var mı?", "هل في إسطنبول بحر؟"]].map(r => exRow(...r)).join("");
+$("#kacEx").innerHTML = [["Saat kaç? — Saat dört.", "كم الساعة؟ — الرابعة."], ["Ders saat kaçta? — Ders saat dokuzda.", "الدرس في أي ساعة؟ — الساعة التاسعة."], ["Bir ayda kaç gün var?", "كم يوماً في الشهر؟"], ["Kaç yaşındasınız? — Yirmi dört yaşındayım.", "كم عمرك؟ — 24 سنة."], ["Bir çay kaç lira? — Bir çay bir lira.", "الشاي بكم؟ — بليرة."], ["Telefon numaranız kaç?", "ما رقم هاتفك؟"], ["Sınıf kaçıncı katta?", "الصف في أي طابق؟"], ["Okul sekizinci sokakta.", "المدرسة في الشارع الثامن."]].map(r => exRow(...r)).join("");
+
+/* isim cümleleri generator */
+const PERS = [["Ben", "أنا"], ["Sen", "أنت"], ["O", "هو/هي"], ["Biz", "نحن"], ["Siz", "أنتم"], ["Onlar", "هم"]];
+function harm4(w) { return { a: "ı", ı: "ı", e: "i", i: "i", o: "u", u: "u", ö: "ü", ü: "ü" }[lastVowel(w)]; }
+function harm2(w) { return "aıou".includes(lastVowel(w)) ? "a" : "e"; }
+const endsV = w => /[aeıioöuü]$/i.test(w);
+function soften(w) { // consonant mutation before a vowel suffix (simplified)
+  const l = lower(w), syl = (l.match(/[aeıioöuü]/g) || []).length;
+  if (syl < 2 || /[^a-zçğıöşü]/.test(l)) return w;
+  const m = { p: "b", ç: "c", t: "d", k: /nk$/.test(l) ? "g" : "ğ" }[l.slice(-1)];
+  return m && !["saat", "devlet", "millet", "kat"].includes(l) ? w.slice(0, -1) + m : w;
+}
+function cop(base, pi) { const i4 = harm4(base), V = endsV(base);
+  return [(V ? "y" : "") + i4 + "m", "s" + i4 + "n", "", (V ? "y" : "") + i4 + "z", "s" + i4 + "n" + i4 + "z"][pi]; }
+function conj(w, p, mode) {
+  const A = harm2(w), I = harm4(w);
+  if (mode === "pos") { if (p === 5) return `${w}(l${A}r)`; const b = (p === 0 || p === 3) && !endsV(w) ? soften(w) : w; return b + cop(b, p); }
+  if (mode === "neg") return p === 5 ? `${w} değil(ler)` : `${w} değil${cop("değil", p)}`;
+  if (mode === "q") { if (p === 5) return `${w}(l${A}r) m${A === "a" ? "ı" : "i"}?`; const mi = "m" + I; return `${w} ${mi}${cop(mi, p)}?`; }
+  return p === 5 ? `${w} değiller mi?` : `${w} değil mi${cop("mi", p)}?`;
+}
+let isimMode = "pos";
+function renderIsim() {
+  const w = $("#isimIn").value.trim(); if (!w) { $("#isimOut").innerHTML = ""; return; }
+  const I = harm4(w), A = harm2(w);
+  $("#isimOut").innerHTML = PERS.map(([pn, ar], i) => {
+    const s = conj(w, i, isimMode);
+    const say = pn + " " + s.replace(/\(.*?\)/g, "").replace(/\s+/g, " ").trim();
+    return `<div class="exl">${playBtn(say, "sm")}<div class="tx"><span class="tr"><b>${pn}</b> ${esc(s)}</span><span class="a">${ar}</span></div></div>`;
+  }).join("");
+}
+$$("#isimMode button").forEach(b => b.onclick = () => { isimMode = b.dataset.m; $$("#isimMode button").forEach(x => x.classList.toggle("on", x === b)); renderIsim(); });
+$("#isimIn").oninput = renderIsim; renderIsim();
+$("#isimQuick").innerHTML = ["öğrenci", "hasta", "yorgun", "aç", "evde", "işte", "mutlu", "Türk", "okulda", "güzel"].map(w => `<button data-w="${w}">${w}</button>`).join("");
+$("#isimQuick").onclick = e => { const b = e.target.closest("button"); if (!b) return; $("#isimIn").value = b.dataset.w; renderIsim(); };
+
+/* ---------------- dialogues ---------------- */
+const COLORS = ["#163a7a", "#c2392b", "#0f8a83", "#b7791f", "#6b46c1"];
+let dCur = null, dPlaying = false;
+$("#dmenu").innerHTML = U.dialogues.map((d, i) => `<button class="ditem" data-part="${d.part}" data-d="${i}"><span class="badge">${d.part}</span><span><b>${esc(d.title)}</b><small>${esc(d.titleAr)}</small></span></button>`).join("");
+function openDialogue(i) {
+  stopDialogue(); dCur = U.dialogues[i];
+  $$(".ditem").forEach(x => x.classList.toggle("on", +x.dataset.d === i));
+  $("#dTitle").innerHTML = `<span class="tr">${esc(dCur.title)}</span><small>${esc(dCur.titleAr)} · ص ${dCur.page}</small>`;
+  const names = [...new Set(dCur.lines.map(l => l.s))];
+  const solo = names.length === 1;
+  $("#chat").innerHTML = dCur.lines.map((l, j) => {
+    const side = solo ? "solo left" : (names.indexOf(l.s) % 2 ? "right" : "left"), col = COLORS[names.indexOf(l.s) % COLORS.length];
+    return `<div class="msg ${side}">${l.s ? `<div class="av" style="background:${col}">${esc(l.s[0])}</div>` : ""}
+      <div class="bubble" data-l="${j}">${l.s ? `<span class="who">${esc(l.s)}</span>` : ""}<span class="tr">${esc(l.tr)}</span><span class="pr-line">${esc(translit(l.tr))}</span><span class="ar">${esc(l.ar)}</span></div></div>`;
+  }).join("");
+  $("#chat").scrollTop = 0;
+}
+function voiceFor(name) { const g = dCur.speakers[name]; return g === "m" ? { pitch: 0.8 } : { pitch: 1.12 }; }
+$("#dmenu").onclick = e => { const b = e.target.closest(".ditem"); if (b) openDialogue(+b.dataset.d); };
+$("#chat").onclick = e => { const b = e.target.closest(".bubble"); if (!b) return; const l = dCur.lines[+b.dataset.l];
+  if ($("#chat").classList.contains("hide-tr")) b.classList.add("reveal");
+  $$(".bubble").forEach(x => x.classList.remove("active")); b.classList.add("active"); speak(l.tr, null, voiceFor(l.s)); };
+async function playDialogue() {
+  dPlaying = true; $("#tgPlay").setAttribute("aria-pressed", "true"); $("#tgPlay").textContent = "■ إيقاف";
+  for (let j = 0; j < dCur.lines.length && dPlaying; j++) {
+    const b = $(`.bubble[data-l="${j}"]`); $$(".bubble").forEach(x => x.classList.remove("active")); b.classList.add("active");
+    b.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (!voice) { stopDialogue(); speak(dCur.lines.map(l => l.tr).join(" ")); return; }
+    await speak(dCur.lines[j].tr, null, voiceFor(dCur.lines[j].s)); await new Promise(r => setTimeout(r, 350));
+  }
+  stopDialogue();
+}
+function stopDialogue() { dPlaying = false; if (synth) synth.cancel(); $("#tgPlay").setAttribute("aria-pressed", "false"); $("#tgPlay").textContent = "▶ شغّل الكل"; }
+$("#tgPlay").onclick = () => dPlaying ? stopDialogue() : playDialogue();
+const tg = (id, cls, inv) => { const b = $(id); b.onclick = () => { const on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", on); $("#chat").classList.toggle(cls, inv ? !on : on); if (cls === "hide-tr") $$(".bubble").forEach(x => x.classList.remove("reveal")); }; };
+tg("#tgAr", "hide-ar", true); tg("#tgPr", "hide-pr", true); tg("#tgHide", "hide-tr", false);
+openDialogue(0);
+
+/* ---------------- sentences ---------------- */
+const partName = { A: "Okulda · في المدرسة", B: "Sayılar · الأرقام", C: "Şehirde · في المدينة" }, partCol = { A: "var(--cobalt)", B: "var(--turq)", C: "var(--red)" };
+$("#sgrid").innerHTML = ["A", "B", "C"].map(p => `<div class="scol"><h3><span class="badge" style="background:${partCol[p]}">${p}</span>${partName[p]}</h3>` +
+  U.keySentences.filter(s => s.part === p).map(s => `<div class="sent">${playBtn(s.tr, "sm")}<div class="tx"><span class="tr">${esc(s.tr)}</span><span class="pr-line" style="display:block;font-size:13px;color:var(--turq)">${esc(translit(s.tr))}</span><span class="a">${esc(s.ar)}</span></div></div>`).join("") + "</div>").join("");
+$$("[data-sm]").forEach(b => b.onclick = () => { $$("[data-sm]").forEach(x => x.classList.toggle("on", x === b)); $("#sgrid").classList.toggle("practice", b.dataset.sm === "practice"); $$(".sent").forEach(s => s.classList.remove("reveal")); });
+$("#sgrid").addEventListener("click", e => { const s = e.target.closest(".sent"); if (s && $("#sgrid").classList.contains("practice")) s.classList.add("reveal"); });
+$("#cult").innerHTML = U.culture.items.map(c => `<div class="cc"><h4><span>${c.ar}</span><span class="tr" style="color:var(--muted)">${c.country}</span></h4><span class="tr">${esc(c.tr)}</span><div class="a">${esc(c.trAr)}</div><div style="margin-top:8px">${playBtn(c.tr, "sm")}</div></div>`).join("");
+
+/* ---------------- quiz ---------------- */
+const shuffle = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pick = (a, n) => shuffle(a).slice(0, n);
+function makeQuiz() {
+  const qs = [], V = U.vocab.filter(v => !v.tr.includes(" ") || true);
+  const distract = (v, key) => pick(U.vocab.filter(x => x !== v && x[key] !== v[key] && (x.cat === v.cat || Math.random() < .3)), 3).map(x => x[key]);
+  pick(V, 3).forEach(v => qs.push({ type: "معنى الكلمة", prompt: `<span class="tr">${esc(v.tr)}</span> ${playBtn(v.tr, "sm")}`, opts: shuffle([v.ar, ...distract(v, "ar")]), ans: v.ar }));
+  pick(V, 3).forEach(v => qs.push({ type: "بالتركي؟", prompt: esc(v.ar), opts: shuffle([v.tr, ...distract(v, "tr")]), ans: v.tr, trOpts: true }));
+  pick(V, 2).forEach(v => qs.push({ type: "🎧 استماع", prompt: `اسمع واختر الكلمة ${playBtn(v.tr)}`, say: v.tr, opts: shuffle([v.tr, ...distract(v, "tr")]), ans: v.tr, trOpts: true }));
+  pick(["okul", "ev", "mutfak", "sınıf", "park", "kantin", "otobüs", "sokak", "masa", "bahçe", "ofis", "kitap", "otel", "köprü", "süt", "cadde", "market", "kuaför"], 2).forEach(w => {
+    const s = daSuffix(w).suf; qs.push({ type: "‎-DA", prompt: `<span class="tr">${w} + ?</span> (في ${w})`, opts: ["da", "de", "ta", "te"], ans: s, trOpts: true }); });
+  { const n = 11 + Math.floor(Math.random() * 980), w = trNum(n); const wrong = new Set(); while (wrong.size < 3) { const m = n + (Math.floor(Math.random() * 40) - 20) || n + 7; if (m !== n && m > 0) wrong.add(String(m)); }
+    qs.push({ type: "🎧 رقم", prompt: `اسمع الرقم ${playBtn(w)}`, say: w, opts: shuffle([String(n), ...wrong]), ans: String(n), trOpts: true }); }
+  { const items = [["Ben", "hasta", "hastayım"], ["Biz", "yorgun", "yorgunuz"], ["Sen", "evde", "evdesin"], ["Siz", "öğrenci", "öğrencisiniz"], ["Ben", "işte", "işteyim"], ["Biz", "aç", "açız"]]; const [p, w, a] = items[Math.floor(Math.random() * items.length)];
+    const wr = [w + "sın", w + "yiz", w + "im", w + "sunuz", w + "yım", w + "dır", w + "lar"].filter(x => x !== a); qs.push({ type: "الجملة الاسمية", prompt: `<span class="tr">${p} ___ (${w})</span>`, opts: shuffle([a, ...pick(wr, 3)]), ans: a, trOpts: true }); }
+  return shuffle(qs).slice(0, 12);
+}
+let QZ = [], qi = 0, score = 0, wrongs = [];
+function startQuiz() { QZ = makeQuiz(); qi = 0; score = 0; wrongs = []; renderQ(); }
+function renderQ() {
+  const c = $("#qcard");
+  if (qi >= QZ.length) {
+    const best = Math.max(store.get("best", 0), score); store.set("best", best);
+    const msg = score >= 11 ? "Mükemmel! ممتاز 🎉" : score >= 8 ? "Çok iyi! جيد جداً 👏" : score >= 5 ? "İyi! كمّل مراجعة 💪" : "Tekrar edelim! راجع وجرّب كمان 📚";
+    c.innerHTML = `<div class="score"><b>${score}/${QZ.length}</b><div style="font-size:20px;font-weight:700;margin-top:6px">${msg}</div><div style="color:var(--muted)">أفضل نتيجة لك: ${best}/${QZ.length}</div></div>
+      ${wrongs.length ? `<div class="review"><b>راجع هذه:</b>${wrongs.map(w => `<div>${w}</div>`).join("")}</div>` : ""}
+      <div class="qfoot" style="justify-content:center"><button class="btn primary" id="qAgain">اختبار جديد ↻</button></div>`;
+    $("#qAgain").onclick = startQuiz; return;
+  }
+  const q = QZ[qi];
+  c.innerHTML = `<div class="qtop"><span>سؤال ${qi + 1} من ${QZ.length}</span><span>النتيجة: ${score}</span></div><div class="qbar"><i style="width:${qi / QZ.length * 100}%"></i></div>
+    <div class="qtype">${q.type}</div><div class="qprompt">${q.prompt}</div>
+    <div class="opts">${q.opts.map(o => `<button class="opt ${q.trOpts ? "tr" : ""}" data-o="${esc(o)}">${esc(o)}</button>`).join("")}</div>
+    <div class="qfoot"><span class="qfb" id="qfb"></span><button class="btn primary" id="qNext" style="visibility:hidden">التالي ←</button></div>`;
+  if (q.say) setTimeout(() => speak(q.say), 250);
+  $$(".opt").forEach(b => b.onclick = () => {
+    const ok = b.dataset.o === q.ans; $$(".opt").forEach(x => { x.disabled = true; if (x.dataset.o === q.ans) x.classList.add("right"); });
+    if (ok) { score++; $("#qfb").innerHTML = '<span style="color:var(--ok)">Doğru! ✓</span>'; } else { b.classList.add("wrong"); $("#qfb").innerHTML = `<span style="color:var(--red)">الصحيح: <span class="tr">${esc(q.ans)}</span></span>`;
+      wrongs.push(`${q.type}: ${q.say ? `<span class="tr">${esc(q.say)}</span>` : q.prompt.replace(/<button.*?<\/button>/g, "")} ← <b class="tr">${esc(q.ans)}</b>`); }
+    $("#qNext").style.visibility = "visible"; $("#qNext").focus();
+  });
+  $("#qNext").onclick = () => { qi++; renderQ(); };
+}
+startQuiz();
+
+/* ---------------- nav highlight ---------------- */
+const secs = $$("section.block");
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) $$(".nav a").forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id)); }), { rootMargin: "-45% 0px -50% 0px" });
+secs.forEach(s => io.observe(s));
+
+renderChips(); renderGrid(); updateProgress();
+})();
+</script>
+</body>
+</html>
